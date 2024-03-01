@@ -8,7 +8,7 @@ body {
   padding: 0;
   background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .divCentree {
@@ -40,10 +40,19 @@ body {
   z-index: -1;
   box-shadow: 0 0 50px rgba(0, 0, 0, 1);
   /* Ajout de l'effet d'ombre */
+  top: 50%; /* Garde le rectangle centré verticalement */
+  left: 50%; /* Centre le rectangle horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste le centrage en fonction des dimensions réelles */
+  width: 1100px; /* Largeur fixe */
+  min-height: 300px; /* Hauteur minimale, permet au rectangle de s'agrandir */
+  background-color: #ffffff; /* Couleur de fond */
+  border-radius: 10px; /* Bords arrondis */
+  z-index: 1; /* Ajuste le z-index si nécessaire pour s'assurer qu'il est au-dessus des autres éléments */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
+  overflow: auto; /* Permet au contenu de défiler si nécessaire */
+  padding: 20px; /* Ajoute de l'espace autour du contenu */
+  box-sizing: border-box; /* Inclut padding dans les dimensions du conteneur */
 }
-
-
-/* Autres styles CSS restent inchangés */
 
 
 
@@ -84,7 +93,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #007bff;
+  border-color: #8a8a8a;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 

@@ -83,3 +83,13 @@ function effacerSurEntree(event) {
         document.getElementById('userInput').value = '';
     }
 }
+
+
+
+
+
+
+
+
+
+

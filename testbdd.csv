@@ -1,32 +1,56 @@
 Nom de l'animal;Habitat;Alimentation;Couleur;Taille;Poids;Type
-Lion;Savane;Viande;Brun;190;190;Mammifère
-Éléphant;Forêt, Savane;Feuilles ;Gris;300;5000;Mammifère
-Pingouin;Antarctique;Poissons;Noir et Blanc;50;20;Oiseau
-Tigre;Jungle;VIande;Orange avec des rayures noires;200;250;Mammifère
-Dauphin;Océan;Poissons;Gris;250;200;Mammifère
-Gorille;Forêt;Fruits, feuilles;Noir;160;200;Mammifère
-Python;Jungle, savane;Petits mammifères;Brun, beige;150;75;Reptile
-Aigle royal;Montagnes, falaises;Petits mammifères, poissons;Brun, beige, blanc;75;6;Oiseau
-Crocodile;Rivières, marécages;Poissons, mammifères;Vert, brun;400;1000;Reptile
-Orque;Océan;Poissons;Noir et blanc;850;7500;Mammifère
-Koala;Forêts;Feuilles ;Gris, blanc;60;10;Mammifère
-Chien;Domestique;Croquettes, viande;Marron;50;15;Mammifère
-Chat;Domestique;Croquettes, poisson;Noir;40;5;Mammifère
-Poule;Ferme;Graines, insectes;Blanc;30;2;Oiseau
-Canard;Étangs, rivières;Herbe, petits poissons;Vert;35;1.5;Oiseau
-Souris;Maison, champs;Graines, déchets;Gris;10;0.03;Mammifère
-Héron;Étangs, marais;Poissons, grenouilles;Blanc, gris;100;2;Oiseau
-Cheval;Pré, écurie;Herbe, foin;Brun;200;500;Mammifère
 Abeille;Jardin, prairie;Nectar, pollen;Noir, jaune;1;0.0001;Insecte
-Pigeon;Ville, parc;Graines, petits insectes;Gris;30;0.3;Oiseau
-Cochon;Ferme;Grains, déchets;Rose;150;80;Mammifère
-Perroquet;Forêt tropicale, maison;Fruits, graines;Rouge;30;0.4;Oiseau
-Vache;Ferme;Herbe, foin;Noir et blanc;250;700;Mammifère
-Coléoptère;Jardin, forêt;Décomposeurs;Noir;2;0.002;Insecte
-Mouton;Ferme;Herbe, foin;Blanc;100;70;Mammifère
-Poulet;Ferme;Graines, insectes;Rouge;30;1.5;Oiseau
-Rat;Maison, égouts;Graines, déchets;Gris;25;0.3;Mammifère
-Merle;Parc, jardin;Vers, insectes;Noir;25;0.1;Oiseau
+Aigle;Montagnes, falaises;Petits mammifères, poissons;Brun, beige, blanc;75;6;Oiseau
+Autruche;Savanes, déserts;Plantes, graines, petits animaux;Noir et blanc;250;150;Oiseau
+Baleine;Océans;Plancton, petits poissons;Gris bleu;25;200000;Mammifère
+Caméléon;Forêts, savanes;Insectes, petits reptiles;Variable;20;0.1;Reptile
+Canard;Étangs, rivières;Herbe, petits poissons;Vert;32.5;1.25;Oiseau
+Chameau;Déserts, steppes;Plantes, feuilles, arbustes;Brun clair;250;600;Mammifère
+Chat;Domestique;Croquettes, poisson;Noir;40;5;Mammifère
+Cheval;Pré, écurie;Herbe, foin;Brun;200;500;Mammifère
 Chèvre;Ferme;Herbe, foin;Blanc;90;60;Mammifère
-Papillon commun;Jardin, prairie;Nectar;Multicolore;5;0.001;Insecte
+Chien;Domestique;Croquettes, viande;Marron;50;15;Mammifère
+Chimpanzé;Forêts tropicales;Fruits, feuilles, insectes;Noir;150;50;Mammifère
+Chouette;Forêts, montagnes;Petits mammifères, oiseaux;Brun, blanc;35;0.6;Oiseau
+Coléoptère;Jardin, forêt;Décomposeurs;Noir;2;0.002;Insecte
+Colibri;Forêts, jardins;Nectar, petits insectes;Multicolore;2.5;0.0001;Oiseau
+Cochon;Ferme;Grains, déchets;Rose;150;80;Mammifère
+Crocodile;Rivières, marécages;Poissons, mammifères;Vert, brun;400;1000;Reptile
+Dauphin;Océan;Poissons;Gris;250;200;Mammifère
+Éléphant;Forêt, Savane;Feuilles ;Gris;300;5000;Mammifère
+Girafe;Savanes;Feuilles, fruits;Jaune, brun;550;1200;Mammifère
+Gorille;Forêt;Fruits, feuilles;Noir;160;200;Mammifère
+Guépard;Savanes;Viande;Jaune tacheté;70;60;Mammifère
+Héron;Étangs, marais;Poissons, grenouilles;Blanc, gris;100;2;Oiseau
+Hippocampe;Océans, mers;Petits crustacés, larves;Multicolore;10;0.05;Poisson
+Hippopotame;Rivières, lacs, marais;Herbe, plantes aquatiques;Gris brun;150;1500;Mammifère
+Kangourou;Forêts, prairies;Herbe, feuilles, écorce;Brun;150;50;Mammifère
+Koala;Forêts;Feuilles ;Gris, blanc;60;10;Mammifère
+Léopard;Forêts, savanes;Viande;Tacheté;70;60;Mammifère
 Libellule;Étangs, rivières;Petits insectes;Bleu;4;0.0005;Insecte
+Lion;Savane;Viande;Brun;190;190;Mammifère
+Loup;Forêts, montagnes;Petits mammifères, gibier;Gris;80;40;Mammifère
+Méduse;Océans;Plancton;Transparent;5;0.025;Invertébré
+Merle;Parc, jardin;Vers, insectes;Noir;25;0.1;Oiseau
+Mouton;Ferme;Herbe, foin;Blanc;100;70;Mammifère
+Ours;Forêts, montagnes;Fruits, poissons, viande;Brun;200;350;Mammifère
+Panda;Forêts de bambous;Bambou;Blanc et noir;150;100;Mammifère
+Panthère noire;Forêts tropicales;Viande;Noir;100;60;Mammifère
+Papillon;Jardin, prairie;Nectar;Multicolore;5;0.001;Insecte
+Perroquet;Forêt tropicale, maison;Fruits, graines;Rouge;30;0.4;Oiseau
+Pigeon;Ville, parc;Graines, petits insectes;Gris;30;0.3;Oiseau
+Pingouin;Antarctique;Poissons;Noir et Blanc;50;20;Oiseau
+Poule;Ferme;Graines, insectes;Blanc;30;2;Oiseau
+Poulet;Ferme;Graines, insectes;Rouge;30;1.5;Oiseau
+Python;Jungle, savane;Petits mammifères;Brun, beige;150;75;Reptile
+Raie;Océans;Crustacés, poissons;Brun;100;250;Poisson
+Renard;Forêts, plaines;Petits mammifères, fruits;Roux;40;5;Mammifère
+Requin;Océans;Poissons, phoques;Gris, blanc;400;300;Poisson
+Rhinocéros;Savanes, prairies;Herbe, buissons;Gris;180;2000;Mammifère
+Sanglier;Forêts, prairies;Plantes, fruits, insectes;Brun;150;100;Mammifère
+Serpent à sonnette;Déserts, prairies;Petits mammifères, oiseaux;Brun, beige;150;2;Reptile
+Souris;Maison, champs;Graines, déchets;Gris;10;0.03;Mammifère
+Tigre;Jungle;VIande;Orange avec des rayures noires;200;250;Mammifère
+Tortue;Forêts, océans, rivières;Plantes, fruits, insectes;Vert, brun;30;25;Reptile
+Toucan;Forêts tropicales;Fruits, insectes;Noir, multicolore;20;0.2;Oiseau
+Zèbre;Savanes, plaines;Herbe, feuilles;Rayé noir et blanc;300;500;Mammifère
