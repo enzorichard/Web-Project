@@ -26,7 +26,8 @@ Hippocampe;Océans, mers;Petits crustacés, larves;Multicolore;10;0.05;Poisson
 Hippopotame;Rivières, lacs, marais;Herbe, plantes aquatiques;Gris brun;150;1500;Mammifère
 Kangourou;Forêts, prairies;Herbe, feuilles, écorce;Brun;150;50;Mammifère
 Koala;Forêts;Feuilles ;Gris, blanc;60;10;Mammifère
-Léopard;Forêts, savanes;Viande;Tacheté;70;60;Mammifère
+Lapin;Champs, prairies;Herbe, légumes;Brun, blanc, gris;25;2;Mammifère
+Léopard;Forêts, savanes;Viande;Tacheté;70;60;Mammifères
 Libellule;Étangs, rivières;Petits insectes;Bleu;4;0.0005;Insecte
 Lion;Savane;Viande;Brun;190;190;Mammifère
 Loup;Forêts, montagnes;Petits mammifères, gibier;Gris;80;40;Mammifère
