@@ -57,3 +57,36 @@ input[type="text"]:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+
+/*couleur case*/
+
+.essai {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.essai-info {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.caracteristiques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Ajuste l'espace entre les caractéristiques */
+}
+
+.caracteristiques div {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.vrai {
+  background-color: #4CAF50; /* Vert */
+}
+
+.faux {
+  background-color: #F44336; /* Rouge */
+}
