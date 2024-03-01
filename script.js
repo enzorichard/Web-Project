@@ -23,7 +23,7 @@ fetch('testbdd.csv')
       const animalEntree = animals.find(animal => animal.name.toLowerCase() === userInput);
       if (!animalEntree) {
         afficherMessageErreur("L'animal n'appartient pas à la base de données");
-        return;
+        return; // Ne pas compter cet essai si l'animal n'est pas trouvé
       }
 
       // Comparer les caractéristiques et stocker les résultats
@@ -58,6 +58,20 @@ function calculerCorrespondances(animalEntree, animalChoisi) {
     poids: animalEntree.poids === animalChoisi.poids,
     type: animalEntree.type === animalChoisi.type,
   };
+  const erreurElement = document.getElementById('resultat');
+  erreurElement.innerHTML = `<div style="color: red;">${message}</div>`;
+}
+
+// Fonction pour calculer les correspondances entre l'animal entré et l'animal à deviner
+function calculerCorrespondances(animalEntree, animalChoisi) {
+  return {
+    habitat: animalEntree.habitat === animalChoisi.habitat,
+    alimentation: animalEntree.alimentation === animalChoisi.alimentation,
+    couleur: animalEntree.couleur === animalChoisi.couleur,
+    taille: animalEntree.taille === animalChoisi.taille,
+    poids: animalEntree.poids === animalChoisi.poids,
+    type: animalEntree.type === animalChoisi.type,
+  };
 }
 
 // Fonction pour afficher les résultats de chaque essai sur le site
@@ -67,12 +81,12 @@ function afficherResultatsEssais() {
     <div class="essai">
       <div class="essai-info">Essai ${index + 1}: ${resultatEssai.userInput}</div>
       <div class="caracteristiques">
-        <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">Type: ${resultatEssai.animalEntree.type}</div>
-        <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">Habitat: ${resultatEssai.animalEntree.habitat}</div>
-        <div class="${resultatEssai.correspondances.alimentation ? 'vrai' : 'faux'}">Alimentation: ${resultatEssai.animalEntree.alimentation}</div>
-        <div class="${resultatEssai.correspondances.couleur ? 'vrai' : 'faux'}">Couleur: ${resultatEssai.animalEntree.couleur}</div>
-        <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">Taille: ${resultatEssai.animalEntree.taille} cm</div>
-        <div class="${resultatEssai.correspondances.poids ? 'vrai' : 'faux'}">Poids: ${resultatEssai.animalEntree.poids} kg</div>
+        <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.type}</div>
+        <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.habitat}</div>
+        <div class="${resultatEssai.correspondances.alimentation ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.alimentation}</div>
+        <div class="${resultatEssai.correspondances.couleur ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.couleur}</div>
+        <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.taille} cm</div>
+        <div class="${resultatEssai.correspondances.poids ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.poids} kg</div>
       </div>
     </div>
   `).join('');
