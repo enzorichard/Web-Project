@@ -1,9 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Pour le Wild Guess */

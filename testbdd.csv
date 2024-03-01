@@ -1,13 +1,32 @@
-﻿Nom de l'animal;Habitat;Alimentation;Couleur;Taille;Poids;Type
-;;;;;;
+Nom de l'animal;Habitat;Alimentation;Couleur;Taille;Poids;Type
 Lion;Savane;Viande;Brun;190;190;Mammifère
 Éléphant;Forêt, Savane;Feuilles ;Gris;300;5000;Mammifère
 Pingouin;Antarctique;Poissons;Noir et Blanc;50;20;Oiseau
 Tigre;Jungle;VIande;Orange avec des rayures noires;200;250;Mammifère
 Dauphin;Océan;Poissons;Gris;250;200;Mammifère
 Gorille;Forêt;Fruits, feuilles;Noir;160;200;Mammifère
-Python;Jungle, savane;Petits mammifères;Brun, beige;Variable;Variable;Reptile
+Python;Jungle, savane;Petits mammifères;Brun, beige;150;75;Reptile
 Aigle royal;Montagnes, falaises;Petits mammifères, poissons;Brun, beige, blanc;75;6;Oiseau
-Crocodile;Rivières, marécages;Poissons, mammifères;Vert, brun;Variable;Variable;Reptile
-Orque;Océan;Poissons;Noir et blanc;800-900;5000-10000;Mammifère
+Crocodile;Rivières, marécages;Poissons, mammifères;Vert, brun;400;1000;Reptile
+Orque;Océan;Poissons;Noir et blanc;850;7500;Mammifère
 Koala;Forêts;Feuilles ;Gris, blanc;60;10;Mammifère
+Chien;Domestique;Croquettes, viande;Marron;50;15;Mammifère
+Chat;Domestique;Croquettes, poisson;Noir;40;5;Mammifère
+Poule;Ferme;Graines, insectes;Blanc;30;2;Oiseau
+Canard;Étangs, rivières;Herbe, petits poissons;Vert;35;1.5;Oiseau
+Souris;Maison, champs;Graines, déchets;Gris;10;0.03;Mammifère
+Héron;Étangs, marais;Poissons, grenouilles;Blanc, gris;100;2;Oiseau
+Cheval;Pré, écurie;Herbe, foin;Brun;200;500;Mammifère
+Abeille;Jardin, prairie;Nectar, pollen;Noir, jaune;1;0.0001;Insecte
+Pigeon;Ville, parc;Graines, petits insectes;Gris;30;0.3;Oiseau
+Cochon;Ferme;Grains, déchets;Rose;150;80;Mammifère
+Perroquet;Forêt tropicale, maison;Fruits, graines;Rouge;30;0.4;Oiseau
+Vache;Ferme;Herbe, foin;Noir et blanc;250;700;Mammifère
+Coléoptère;Jardin, forêt;Décomposeurs;Noir;2;0.002;Insecte
+Mouton;Ferme;Herbe, foin;Blanc;100;70;Mammifère
+Poulet;Ferme;Graines, insectes;Rouge;30;1.5;Oiseau
+Rat;Maison, égouts;Graines, déchets;Gris;25;0.3;Mammifère
+Merle;Parc, jardin;Vers, insectes;Noir;25;0.1;Oiseau
+Chèvre;Ferme;Herbe, foin;Blanc;90;60;Mammifère
+Papillon commun;Jardin, prairie;Nectar;Multicolore;5;0.001;Insecte
+Libellule;Étangs, rivières;Petits insectes;Bleu;4;0.0005;Insecte
