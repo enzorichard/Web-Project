@@ -28,19 +28,20 @@ body {
 
 .rectangle {
   position: absolute;
-  top: 300px;
-  /* Placer le rectangle à 50% de la hauteur de la page */
-  left: 50%;
-  /* Placer le rectangle à 50% de la largeur de la page */
-  transform: translate(-50%, -50%);
-  width: 1100px;
-  height: 300px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  z-index: -1;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 1);
-  /* Ajout de l'effet d'ombre */
+  top: 50%; /* Garde le rectangle centré verticalement */
+  left: 50%; /* Centre le rectangle horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste le centrage en fonction des dimensions réelles */
+  width: 1100px; /* Largeur fixe */
+  min-height: 300px; /* Hauteur minimale, permet au rectangle de s'agrandir */
+  background-color: #ffffff; /* Couleur de fond */
+  border-radius: 10px; /* Bords arrondis */
+  z-index: 1; /* Ajuste le z-index si nécessaire pour s'assurer qu'il est au-dessus des autres éléments */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
+  overflow: auto; /* Permet au contenu de défiler si nécessaire */
+  padding: 20px; /* Ajoute de l'espace autour du contenu */
+  box-sizing: border-box; /* Inclut padding dans les dimensions du conteneur */
 }
+
 
 
 /* Autres styles CSS restent inchangés */
