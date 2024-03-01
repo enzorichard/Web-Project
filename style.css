@@ -28,18 +28,18 @@ body {
 
 .rectangle {
   position: absolute;
-  top: 50%; /* Garde le rectangle centré verticalement */
+  top: 375px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
   left: 50%; /* Centre le rectangle horizontalement */
-  transform: translate(-50%, -50%); /* Ajuste le centrage en fonction des dimensions réelles */
+  transform: translateX(-50%); /* Ajuste seulement horizontalement */
   width: 1100px; /* Largeur fixe */
   min-height: 300px; /* Hauteur minimale, permet au rectangle de s'agrandir */
   background-color: #ffffff; /* Couleur de fond */
   border-radius: 10px; /* Bords arrondis */
-  z-index: 1; /* Ajuste le z-index si nécessaire pour s'assurer qu'il est au-dessus des autres éléments */
+  z-index: 1; /* S'assure qu'il est au-dessus des autres éléments */
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
-  overflow: auto; /* Permet au contenu de défiler si nécessaire */
-  padding: 20px; /* Ajoute de l'espace autour du contenu */
-  box-sizing: border-box; /* Inclut padding dans les dimensions du conteneur */
+  overflow: auto; /* Active le défilement si nécessaire */
+  padding: 20px; /* Espace autour du contenu */
+  box-sizing: border-box; /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
 }
 
 
