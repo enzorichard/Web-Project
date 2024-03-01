@@ -67,12 +67,12 @@ function afficherResultatsEssais() {
     <div class="essai">
       <div class="essai-info">Essai ${index + 1}: ${resultatEssai.userInput}</div>
       <div class="caracteristiques">
-        <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">Type: ${resultatEssai.animalEntree.type}</div>
-        <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">Habitat: ${resultatEssai.animalEntree.habitat}</div>
-        <div class="${resultatEssai.correspondances.alimentation ? 'vrai' : 'faux'}">Alimentation: ${resultatEssai.animalEntree.alimentation}</div>
-        <div class="${resultatEssai.correspondances.couleur ? 'vrai' : 'faux'}">Couleur: ${resultatEssai.animalEntree.couleur}</div>
-        <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">Taille: ${resultatEssai.animalEntree.taille} cm</div>
-        <div class="${resultatEssai.correspondances.poids ? 'vrai' : 'faux'}">Poids: ${resultatEssai.animalEntree.poids} kg</div>
+        <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.type}</div>
+        <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.habitat}</div>
+        <div class="${resultatEssai.correspondances.alimentation ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.alimentation}</div>
+        <div class="${resultatEssai.correspondances.couleur ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.couleur}</div>
+        <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.taille} cm</div>
+        <div class="${resultatEssai.correspondances.poids ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.poids} kg</div>
       </div>
     </div>
   `).join('');
