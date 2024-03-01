@@ -23,7 +23,7 @@ fetch('testbdd.csv')
       const animalEntree = animals.find(animal => animal.name.toLowerCase() === userInput);
       if (!animalEntree) {
         afficherMessageErreur("L'animal n'appartient pas à la base de données");
-        return;
+        return; // Ne pas compter cet essai si l'animal n'est pas trouvé
       }
 
       // Comparer les caractéristiques et stocker les résultats
@@ -58,6 +58,20 @@ function calculerCorrespondances(animalEntree, animalChoisi) {
     poids: animalEntree.poids === animalChoisi.poids,
     type: animalEntree.type === animalChoisi.type,
   };
+  const erreurElement = document.getElementById('resultat');
+  erreurElement.innerHTML = `<div style="color: red;">${message}</div>`;
+}
+
+// Fonction pour calculer les correspondances entre l'animal entré et l'animal à deviner
+function calculerCorrespondances(animalEntree, animalChoisi) {
+  return {
+    habitat: animalEntree.habitat === animalChoisi.habitat,
+    alimentation: animalEntree.alimentation === animalChoisi.alimentation,
+    couleur: animalEntree.couleur === animalChoisi.couleur,
+    taille: animalEntree.taille === animalChoisi.taille,
+    poids: animalEntree.poids === animalChoisi.poids,
+    type: animalEntree.type === animalChoisi.type,
+  };
 }
 
 // Fonction pour afficher les résultats de chaque essai sur le site
@@ -78,3 +92,8 @@ function afficherResultatsEssais() {
   `).join('');
 }
 
+function effacerSurEntree(event) {
+    if (event.keyCode === 13) {
+        document.getElementById('userInput').value = '';
+    }
+}
