@@ -53,43 +53,40 @@ function calculerCorrespondances(animalEntree, animalChoisi) {
 function afficherResultatsEssais(animalChoisi) {
   const resultatElement = document.getElementById('resultat');
 
+  // Si l'utilisateur a trouvé l'animal mystère dans son dernier essai, redirige vers une autre page
   const dernierEssai = resultatsEssais[resultatsEssais.length - 1];
-
   if (dernierEssai && dernierEssai.userInput === animalChoisi.name.toLowerCase()) {
     // URL de la page de victoire ou toute autre page que tu souhaites afficher
-    const urlDeVictoire = 'http://localhost/projet%20web/gagne.html'; // Assure-toi que l'URL est correcte
-    
+    const urlDeVictoire = 'http://localhost/projet%20web/gagne.html';
+  
     // Affiche un message de succès avant de rediriger
-    resultatElement.innerHTML = `<div class="succes">Bien joué §</div>`;
-    
+    resultatElement.innerHTML = `<div class="succes">Bien joué, c'était : ${animalChoisi.name}</div>`;
+  
     // Utilise setTimeout pour laisser un peu de temps afin que l'utilisateur puisse lire le message
     setTimeout(() => {
-      window.location.href = urlDeVictoire;
+      window.location.href = urlDeVictoire;d
     }, 2000); // Redirige après 2 secondes
   } else {
-    // Continue à afficher les essais si l'animal mystère n'a pas encore été trouvé
+    // Affiche les informations de l'animal entré par l'utilisateur
     resultatElement.innerHTML = resultatsEssais.map((resultatEssai, index) => {
-      const cheminImage = `chemin/vers/images/${animalChoisi.name.toLowerCase()}.jpg`; // Ajuste selon ton schéma de nommage des images
+      const cheminImage = `images/${resultatEssai.animalEntree.name.toLowerCase()}.jpg`; // Ajuste selon le schéma de nommage de tes images
       
       return `
         <div class="essai">
-
-          
+          <img src="${cheminImage}" alt="Image de ${resultatEssai.animalEntree.name}" style="width:100px; height:100px;">
           <div class="caracteristiques">
-            <img src="${cheminImage}" alt="Image de ${animalChoisi.name}" style="width:100px; height:100px;">
-            <p>${animalChoisi.name}</p>
-            <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">Type: ${animalChoisi.type}</div>
-            <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">Habitat: ${animalChoisi.habitat}</div>
-            <div class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">Régime: ${animalChoisi.regimeAlimentaire}</div>
-            <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">Taille: ${animalChoisi.taille}</div>
-            <div class="${resultatEssai.correspondances.statutConservation ? 'vrai' : 'faux'}">Conservation: ${animalChoisi.statutConservation}</div>
+            <p>${resultatEssai.animalEntree.name}</p>
+            <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">Type: ${resultatEssai.animalEntree.type}</div>
+            <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">Habitat: ${resultatEssai.animalEntree.habitat}</div>
+            <div class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">Régime: ${resultatEssai.animalEntree.regimeAlimentaire}</div>
+            <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">Taille: ${resultatEssai.animalEntree.taille}</div>
+            <div class="${resultatEssai.correspondances.statutConservation ? 'vrai' : 'faux'}">Conservation: ${resultatEssai.animalEntree.statutConservation}</div>
           </div>
         </div>
       `;
     }).join('');
   }
 }
-
 
 
 
