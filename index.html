@@ -14,12 +14,13 @@
   </div>
 
 
-
   <div class="divCentree">
     <h2>Choisis un animal !</h2>
     <div>
+      <form autocomplete="off"><input type="text" name="q" id="q" onKeyUp="showResults(this.value)" />
+      <div id="result"></div>
+      </form>
       <input type="text" id="userInput" placeholder="Entrez un animal">
-      <datalist id="userInput"> ... </datalist>
     </div>
   </div>
 

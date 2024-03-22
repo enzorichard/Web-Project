@@ -92,11 +92,13 @@ function afficherResultatsEssais() {
   `).join('');
 }
 
-function effacerSurEntree(event) {
-    if (event.keyCode === 13) {
-        document.getElementById('userInput').value = '';
-    }
-}
+document.getElementById('userInput').addEventListener('keyup', function(event) {
+  // Vérifie si la touche pressée est Entrée (keyCode 13)
+  if (event.keyCode === 13) {
+    // Vide le champ input
+    this.value = '';
+  }
+});
 
 
 

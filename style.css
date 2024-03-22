@@ -28,7 +28,7 @@ body {
 
 .rectangle {
   position: absolute;
-  top: 375px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
+  top: 200px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
   left: 50%; /* Centre le rectangle horizontalement */
   transform: translateX(-50%); /* Ajuste seulement horizontalement */
   width: 1100px; /* Largeur fixe */
@@ -62,7 +62,7 @@ body {
 
 .loader {
   color: rgb(0, 0, 0);
-  background: linear-gradient(to right, #2d60ec, #3ccfda);
+  background: linear-gradient(to right, #0044ff, #3ccfda);
   font-size: 30px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -74,9 +74,10 @@ body {
 
 /* Pour le Wild Guess */
 
+
 input[type="text"] {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #7d7d7d;
   border-radius: 5px;
   outline: none;
   font-size: 16px;
@@ -84,8 +85,8 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #fa0000;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #949494;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
 }
 
 /*couleur case*/
@@ -114,9 +115,9 @@ input[type="text"]:focus {
 }
 
 .vrai {
-  background-color: #4CAF50; /* Vert */
+  background-color: #68df6c; /* Vert */
 }
 
 .faux {
-  background-color: #F44336; /* Rouge */
+  background-color: #f25f54; /* Rouge */
 }
