@@ -102,7 +102,7 @@ body {
     top: 375px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
     left: 50%; /* Centre le rectangle horizontalement */
     transform: translateX(-50%); /* Ajuste seulement horizontalement */
-    width: 1100px; /* Largeur fixe */
+    width: 1500px; /* Largeur fixe */
     min-height: 300px; /* Hauteur minimale, permet au rectangle de s'agrandir */
     background-color: #ffffff; /* Couleur de fond */
     border-radius: 10px; /* Bords arrondis */
@@ -219,35 +219,46 @@ input[type="text"]:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/*couleur case*/
-
+/* Structure de l'essai */
 .essai {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  align-items: center; /* Centre les éléments verticalement */
+  margin-bottom: 20px; /* Espace entre les essais */
 }
 
+/* Informations de l'animal et image */
 .essai-info {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-right: 20px; /* Espace après le nom de l'animal */
 }
 
+/* Conteneur des caractéristiques */
 .caracteristiques {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Ajuste l'espace entre les caractéristiques */
+  gap: 10px; /* Espace entre les caractéristiques */
 }
 
+/* Style des cases de caractéristiques */
 .caracteristiques div {
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
+  padding: 5px 10px; /* Espace intérieur */
+  min-width: 120px; /* Largeur minimale de chaque case */
+  text-align: center; /* Texte centré dans la case */
+  border-radius: 5px; /* Bords arrondis */
 }
 
+/* Style pour les caractéristiques vraies et fausses */
 .vrai {
   background-color: #4CAF50; /* Vert */
 }
 
 .faux {
   background-color: #F44336; /* Rouge */
+}
+
+/* Image de l'animal */
+.essai img {
+  width: 100px; /* Définis la largeur de l'image */
+  height: 100px; /* Définis la hauteur de l'image */
+  object-fit: cover; /* S'assure que l'image couvre la zone sans être déformée */
+  margin-right: 20px; /* Espace après l'image */
 }

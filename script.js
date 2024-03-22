@@ -53,38 +53,43 @@ function calculerCorrespondances(animalEntree, animalChoisi) {
 function afficherResultatsEssais(animalChoisi) {
   const resultatElement = document.getElementById('resultat');
 
-  // Vérifie si l'utilisateur a trouvé l'animal mystère dans son dernier essai
   const dernierEssai = resultatsEssais[resultatsEssais.length - 1];
-  // Si l'animal mystère a été trouvé, redirige l'utilisateur vers une nouvelle page
-if (dernierEssai && dernierEssai.userInput === animalChoisi.name.toLowerCase()) {
-  // URL de la page de victoire ou toute autre page que tu souhaites afficher
-  const urlDeVictoire = 'http://localhost/projet%20web/gagne.html²';
-  
-  // Affiche un message de succès avant de rediriger
-  resultatElement.innerHTML = `<div class="succes">Bien joué</div>`;
-  
-  // Utilise setTimeout pour laisser un peu de temps afin que l'utilisateur puisse lire le message
-  setTimeout(() => {
-    window.location.href = urlDeVictoire;
-  }, 2000); // Redirige après 2 secondes
-} else {
- 
 
-    // Sinon, continue à afficher les essais 
-    resultatElement.innerHTML = resultatsEssais.map((resultatEssai, index) => `
-      <div class="essai">
-        <div class="essai-info">Essai ${index + 1}: ${resultatEssai.userInput}</div>
-        <div class="caracteristiques">
-          <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">Type: ${resultatEssai.animalEntree.type}</div>
-          <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">Habitat: ${resultatEssai.animalEntree.habitat}</div>
-          <div class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">Régime: ${resultatEssai.animalEntree.regimeAlimentaire}</div>
-          <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">Taille: ${resultatEssai.animalEntree.taille}</div>
-          <div class="${resultatEssai.correspondances.statutConservation ? 'vrai' : 'faux'}">Conservation: ${resultatEssai.animalEntree.statutConservation}</div>
+  if (dernierEssai && dernierEssai.userInput === animalChoisi.name.toLowerCase()) {
+    // URL de la page de victoire ou toute autre page que tu souhaites afficher
+    const urlDeVictoire = 'http://localhost/projet%20web/gagne.html'; // Assure-toi que l'URL est correcte
+    
+    // Affiche un message de succès avant de rediriger
+    resultatElement.innerHTML = `<div class="succes">Bien joué §</div>`;
+    
+    // Utilise setTimeout pour laisser un peu de temps afin que l'utilisateur puisse lire le message
+    setTimeout(() => {
+      window.location.href = urlDeVictoire;
+    }, 2000); // Redirige après 2 secondes
+  } else {
+    // Continue à afficher les essais si l'animal mystère n'a pas encore été trouvé
+    resultatElement.innerHTML = resultatsEssais.map((resultatEssai, index) => {
+      const cheminImage = `chemin/vers/images/${animalChoisi.name.toLowerCase()}.jpg`; // Ajuste selon ton schéma de nommage des images
+      
+      return `
+        <div class="essai">
+
+          
+          <div class="caracteristiques">
+            <img src="${cheminImage}" alt="Image de ${animalChoisi.name}" style="width:100px; height:100px;">
+            <p>${animalChoisi.name}</p>
+            <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">Type: ${animalChoisi.type}</div>
+            <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">Habitat: ${animalChoisi.habitat}</div>
+            <div class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">Régime: ${animalChoisi.regimeAlimentaire}</div>
+            <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">Taille: ${animalChoisi.taille}</div>
+            <div class="${resultatEssai.correspondances.statutConservation ? 'vrai' : 'faux'}">Conservation: ${animalChoisi.statutConservation}</div>
+          </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 }
+
 
 
 
