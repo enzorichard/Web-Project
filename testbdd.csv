@@ -30,4 +30,29 @@ Merle;Aérien;Omnivore;Oiseau;Petit;Préoccupation mineure
 Chèvre;Terrestre;Herbivore;Mammifère;Moyen;Domestiqué
 Papillon commun;Aérien;Herbivore;Insecte;Très Petit;Préoccupation mineure
 Libellule;Aquiatique;Carnivore;Insecte;Petit;Préoccupation mineure
+Loup;Terrestre;Carnivore;Mammifère;Grand;Vulnérable
+Renard;Terrestre;Omnivore;Mammifère;Moyen;Préoccupation mineure
+Baleine bleue;Maritime;Carnivore;Mammifère;Très Grand;En danger
+Girafe;Terrestre;Herbivore;Mammifère;Très Grand;Vulnérable
+Hippopotame;Aquiatique;Herbivore;Mammifère;Grand;Vulnérable
+Rhinocéros;Terrestre;Herbivore;Mammifère;Grand;En danger critique
+Panda géant;Terrestre;Herbivore;Mammifère;Moyen;Vulnérable
+Zèbre;Terrestre;Herbivore;Mammifère;Moyen;Préoccupation mineure
+Guépard;Terrestre;Carnivore;Mammifère;Moyen;Vulnérable
+Manchot empereur;Maritime;Carnivore;Oiseau;Moyen;Préoccupation mineure
+Tortue de mer;Aquiatique;Herbivore;Reptile;Moyen;En danger
+Ours polaire;Terrestre;Carnivore;Mammifère;Grand;Vulnérable
+Jaguar;Terrestre;Carnivore;Mammifère;Moyen;Préoccupation mineure
+Fourmi;Terrestre;Omnivore;Insecte;Très Petit;Préoccupation mineure
+Scarabée;Terrestre;Omnivore;Insecte;Petit;Préoccupation mineure
+Lémurien;Terrestre;Herbivore;Mammifère;Petit;En danger
+Narval;Maritime;Carnivore;Mammifère;Grand;Préoccupation mineure
+Toucan;Aérien;Omnivore;Oiseau;Petit;Préoccupation mineure
+Kangourou;Terrestre;Herbivore;Mammifère;Moyen;Préoccupation mineure
+Paresseux;Terrestre;Herbivore;Mammifère;Petit;Préoccupation mineure
+Faucon;Aérien;Carnivore;Oiseau;Petit;Préoccupation mineure
+Salamandre;Terrestre;Carnivore;Amphibien;Petit;Préoccupation mineure
+Iguane;Terrestre;Herbivore;Reptile;Moyen;Préoccupation mineure
+Mamouth laineux;Terrestre;Herbivore;Mammifère;Très Grand;Disparu
+Dodo;Terrestre;Omnivore;Oiseau;Moyen;Disparu
 
