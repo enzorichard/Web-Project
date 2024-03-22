@@ -18,7 +18,7 @@ fetch('testbdd.csv')
     document.getElementById('userInput').addEventListener('change', function() {
       const userInput = this.value.trim().toLowerCase();
       const animalEntree = animals.find(animal => animal.name.toLowerCase() === userInput);
-      
+
       if (!animalEntree) {
         afficherMessageErreur("L'animal n'appartient pas à la base de données");
         return;
@@ -75,7 +75,8 @@ document.getElementById('userInput').addEventListener('keyup', function(event) {
 });
 
 function effacerSurEntree(event) {
-    if (event.keyCode === 13) {
-        document.getElementById('userInput').value = '';
-    }
+  if (event.keyCode === 13) {
+    document.getElementById('userInput').value = '';
+  }
 }
+

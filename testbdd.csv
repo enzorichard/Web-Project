@@ -6,7 +6,7 @@ Tigre;Terrestre;Carnivore;Mammifère;Grand;En danger
 Dauphin;Maritime;Carnivore;Mammifère;Moyen;Préoccupation mineure
 Gorille;Terrestre;Herbivore;Mammifère;Grand;En danger critique
 Python;Terrestre;Carnivore;Reptile;Grand;Préoccupation mineure
-Aigle;Aérien;Carnivore;Oiseau;Moyen;Préoccupation mineure
+Aigle royal;Aérien;Carnivore;Oiseau;Moyen;Préoccupation mineure
 Crocodile;Aquiatique;Carnivore;Reptile;Grand;Préoccupation mineure
 Orque;Maritime;Carnivore;Mammifère;Très Grand;Vulnérable
 Koala;Terrestre;Herbivore;Mammifère;Petit;Vulnérable
@@ -28,7 +28,7 @@ Poulet;Terrestre;Omnivore;Oiseau;Petit;Domestiqué
 Rat;Terrestre;Omnivore;Mammifère;Petit;Préoccupation mineure
 Merle;Aérien;Omnivore;Oiseau;Petit;Préoccupation mineure
 Chèvre;Terrestre;Herbivore;Mammifère;Moyen;Domestiqué
-Papillon;Aérien;Herbivore;Insecte;Très Petit;Préoccupation mineure
+Papillon commun;Aérien;Herbivore;Insecte;Très Petit;Préoccupation mineure
 Libellule;Aquiatique;Carnivore;Insecte;Petit;Préoccupation mineure
 Loup;Terrestre;Carnivore;Mammifère;Grand;Vulnérable
 Renard;Terrestre;Omnivore;Mammifère;Moyen;Préoccupation mineure
@@ -36,7 +36,7 @@ Baleine bleue;Maritime;Carnivore;Mammifère;Très Grand;En danger
 Girafe;Terrestre;Herbivore;Mammifère;Très Grand;Vulnérable
 Hippopotame;Aquiatique;Herbivore;Mammifère;Grand;Vulnérable
 Rhinocéros;Terrestre;Herbivore;Mammifère;Grand;En danger critique
-Panda;Terrestre;Herbivore;Mammifère;Moyen;Vulnérable
+Panda géant;Terrestre;Herbivore;Mammifère;Moyen;Vulnérable
 Zèbre;Terrestre;Herbivore;Mammifère;Moyen;Préoccupation mineure
 Guépard;Terrestre;Carnivore;Mammifère;Moyen;Vulnérable
 Manchot empereur;Maritime;Carnivore;Oiseau;Moyen;Préoccupation mineure
@@ -53,5 +53,5 @@ Paresseux;Terrestre;Herbivore;Mammifère;Petit;Préoccupation mineure
 Faucon;Aérien;Carnivore;Oiseau;Petit;Préoccupation mineure
 Salamandre;Terrestre;Carnivore;Amphibien;Petit;Préoccupation mineure
 Iguane;Terrestre;Herbivore;Reptile;Moyen;Préoccupation mineure
-Mamouth;Terrestre;Herbivore;Mammifère;Très Grand;Disparu
+Mamouth laineux;Terrestre;Herbivore;Mammifère;Très Grand;Disparu
 Dodo;Terrestre;Omnivore;Oiseau;Moyen;Disparu
