@@ -10,9 +10,7 @@ fetch('testbdd.csv')
       // Ajuste ici selon la nouvelle structure de ta base de données
       const [name, habitat, regimeAlimentaire, type, taille, statutConservation] = line.split(';');
       return { name, habitat, regimeAlimentaire, type, taille, statutConservation };
-      // Ajuste ici selon la nouvelle structure de ta base de données
-      const [name, habitat, regimeAlimentaire, type, taille, statutConservation] = line.split(';');
-      return { name, habitat, regimeAlimentaire, type, taille, statutConservation };
+      
     });
 
     const animalChoisi = animals[Math.floor(Math.random() * animals.length)];
