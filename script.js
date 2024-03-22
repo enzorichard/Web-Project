@@ -10,6 +10,9 @@ fetch('testbdd.csv')
       // Ajuste ici selon la nouvelle structure de ta base de données
       const [name, habitat, regimeAlimentaire, type, taille, statutConservation] = line.split(';');
       return { name, habitat, regimeAlimentaire, type, taille, statutConservation };
+      // Ajuste ici selon la nouvelle structure de ta base de données
+      const [name, habitat, regimeAlimentaire, type, taille, statutConservation] = line.split(';');
+      return { name, habitat, regimeAlimentaire, type, taille, statutConservation };
     });
 
     const animalChoisi = animals[Math.floor(Math.random() * animals.length)];
@@ -21,6 +24,7 @@ fetch('testbdd.csv')
       
       if (!animalEntree) {
         afficherMessageErreur("L'animal n'appartient pas à la base de données");
+        return;
         return;
       }
 
@@ -97,17 +101,46 @@ document.getElementById('userInput').addEventListener('keyup', function(event) {
 });
 
 function effacerSurEntree(event) {
-    if (event.keyCode === 13) {
-        document.getElementById('userInput').value = '';
-    }
+  if (event.keyCode === 13) {
+    document.getElementById('userInput').value = '';
+  }
 }
 
 
 
+// Stocker les noms d'animaux pour les suggestions
+let animalNames = [];
 
+// Récupérer les données du fichier CSV
+fetch('testbdd.csv')
+  .then(response => response.text())
+  .then(data => {
+    // Séparer les lignes et exclure la première ligne (en-têtes)
+    const lines = data.split('\n').slice(1).filter(line => line.trim() !== '');
 
+    // Extraire les noms d'animaux de chaque ligne
+    animalNames = lines.map(line => line.split(';')[0].trim());
 
+    // Afficher les suggestions lors de la saisie dans l'input
+    const userInput = document.getElementById('userInput');
+    userInput.addEventListener('input', function() {
+      const inputText = this.value.toLowerCase(); // Convertir en minuscules
+      const suggestions = animalNames.filter(name => name.toLowerCase().startsWith(inputText));
+      updateSuggestions(suggestions);
+    });
+  })
+  .catch(error => console.error('Erreur lors de la récupération des données:', error));
 
+// Mettre à jour la liste de suggestions
+function updateSuggestions(suggestions) {
+  const datalist = document.getElementById('animauxList');
+  datalist.innerHTML = ''; // Effacer les suggestions précédentes
+  suggestions.forEach(animal => {
+    const option = document.createElement('option');
+    option.value = animal;
+    datalist.appendChild(option);
+  });
+}
 
 
 

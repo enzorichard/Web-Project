@@ -8,7 +8,7 @@ body {
   padding: 0;
   background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .divCentree {
@@ -28,7 +28,7 @@ body {
 
 .rectangle {
   position: absolute;
-  top: 375px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
+  top: 200px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
   left: 50%; /* Centre le rectangle horizontalement */
   transform: translateX(-50%); /* Ajuste seulement horizontalement */
   width: 1100px; /* Largeur fixe */
@@ -41,7 +41,6 @@ body {
   padding: 20px; /* Espace autour du contenu */
   box-sizing: border-box; /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
 }
-
 
 
 /* Autres styles CSS restent inchangés */
@@ -63,7 +62,7 @@ body {
 
 .loader {
   color: rgb(0, 0, 0);
-  background: linear-gradient(to right, #2d60ec, #3ccfda);
+  background: linear-gradient(to right, #0044ff, #3ccfda);
   font-size: 30px;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -205,9 +204,10 @@ body {
 
 /* Pour le Wild Guess */
 
+
 input[type="text"] {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #7d7d7d;
   border-radius: 5px;
   outline: none;
   font-size: 16px;
@@ -215,8 +215,8 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #949494;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
 }
 
 /* Structure de l'essai */
@@ -248,11 +248,11 @@ input[type="text"]:focus {
 
 /* Style pour les caractéristiques vraies et fausses */
 .vrai {
-  background-color: #4CAF50; /* Vert */
+  background-color: #68df6c; /* Vert */
 }
 
 .faux {
-  background-color: #F44336; /* Rouge */
+  background-color: #f25f54; /* Rouge */
 }
 
 /* Image de l'animal */

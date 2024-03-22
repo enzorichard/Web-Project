@@ -13,22 +13,22 @@
     <h1 class="loader">Wild Guess</h1>
   </div>
 
-
-
   <div class="divCentree">
-    <h2>Choose an animal !</h2>
-    <input type="text" id="userInput" placeholder="Entrez un animal">
-    <div id="suggestions">
-      <div>
+    <h2>Choisis un animal !</h2>
+    <div>
+      <!-- Ajout de la liste de suggestions pour l'autocomplétion -->
+      <input type="text" id="userInput" list="animauxList" placeholder="Entrez un animal">
+      <!-- Liste des options d'autocomplétion -->
+      <datalist id="animauxList"></datalist>
         
     </div>
   </div>
 
   <div class="rectangle">
 
-  <div id="resultat"></div>
+  <div id="resultat" class="divCentree"></div>
 
-  </div>
+    </div>
 
   <script src="script.js"></script>
 </body>
