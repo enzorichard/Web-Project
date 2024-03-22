@@ -31,7 +31,7 @@ fetch('testbdd.csv')
       };
 
       resultatsEssais.push(resultatEssai);
-      afficherResultatsEssais();
+      afficherResultatsEssais(animalChoisi);
     });
   })
   .catch(error => console.error('Erreur lors de la récupération des données:', error));
@@ -50,22 +50,42 @@ function calculerCorrespondances(animalEntree, animalChoisi) {
     statutConservation: animalEntree.statutConservation === animalChoisi.statutConservation,
   };
 }
-
-function afficherResultatsEssais() {
+function afficherResultatsEssais(animalChoisi) {
   const resultatElement = document.getElementById('resultat');
-  resultatElement.innerHTML = resultatsEssais.map((resultatEssai, index) => `
-    <div class="essai">
-      <div class="essai-info">Essai ${index + 1}: ${resultatEssai.userInput}</div>
-      <div class="caracteristiques">
-        <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">Type: ${resultatEssai.animalEntree.type}</div>
-        <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">Habitat: ${resultatEssai.animalEntree.habitat}</div>
-        <div class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">Régime: ${resultatEssai.animalEntree.regimeAlimentaire}</div>
-        <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">Taille: ${resultatEssai.animalEntree.taille}</div>
-        <div class="${resultatEssai.correspondances.statutConservation ? 'vrai' : 'faux'}">Conservation: ${resultatEssai.animalEntree.statutConservation}</div>
+
+  // Vérifie si l'utilisateur a trouvé l'animal mystère dans son dernier essai
+  const dernierEssai = resultatsEssais[resultatsEssais.length - 1];
+  // Si l'animal mystère a été trouvé, redirige l'utilisateur vers une nouvelle page
+if (dernierEssai && dernierEssai.userInput === animalChoisi.name.toLowerCase()) {
+  // URL de la page de victoire ou toute autre page que tu souhaites afficher
+  const urlDeVictoire = 'http://localhost/projet%20web/gagne.html²';
+  
+  // Affiche un message de succès avant de rediriger
+  resultatElement.innerHTML = `<div class="succes">Bien joué</div>`;
+  
+  // Utilise setTimeout pour laisser un peu de temps afin que l'utilisateur puisse lire le message
+  setTimeout(() => {
+    window.location.href = urlDeVictoire;
+  }, 2000); // Redirige après 2 secondes
+} else {
+ 
+
+    // Sinon, continue à afficher les essais 
+    resultatElement.innerHTML = resultatsEssais.map((resultatEssai, index) => `
+      <div class="essai">
+        <div class="essai-info">Essai ${index + 1}: ${resultatEssai.userInput}</div>
+        <div class="caracteristiques">
+          <div class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">Type: ${resultatEssai.animalEntree.type}</div>
+          <div class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">Habitat: ${resultatEssai.animalEntree.habitat}</div>
+          <div class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">Régime: ${resultatEssai.animalEntree.regimeAlimentaire}</div>
+          <div class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">Taille: ${resultatEssai.animalEntree.taille}</div>
+          <div class="${resultatEssai.correspondances.statutConservation ? 'vrai' : 'faux'}">Conservation: ${resultatEssai.animalEntree.statutConservation}</div>
+        </div>
       </div>
-    </div>
-  `).join('');
+    `).join('');
+  }
 }
+
 
 
 document.getElementById('userInput').addEventListener('keyup', function(event) {
@@ -73,3 +93,19 @@ document.getElementById('userInput').addEventListener('keyup', function(event) {
     this.value = ''; // Vide le champ input
   }
 });
+
+function effacerSurEntree(event) {
+    if (event.keyCode === 13) {
+        document.getElementById('userInput').value = '';
+    }
+}
+
+
+
+
+
+
+
+
+
+

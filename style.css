@@ -69,7 +69,137 @@ body {
   -webkit-background-clip: text;
   animation: animate8345 9s linear infinite;
   font-weight: bold;
-  text-align: center;
+  text-align: center;html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  
+  .divCentree {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .texteCentre {
+    text-align: center;
+  }
+  
+  
+  .rectangle {
+    position: absolute;
+    top: 375px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
+    left: 50%; /* Centre le rectangle horizontalement */
+    transform: translateX(-50%); /* Ajuste seulement horizontalement */
+    width: 1100px; /* Largeur fixe */
+    min-height: 300px; /* Hauteur minimale, permet au rectangle de s'agrandir */
+    background-color: #ffffff; /* Couleur de fond */
+    border-radius: 10px; /* Bords arrondis */
+    z-index: 1; /* S'assure qu'il est au-dessus des autres éléments */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
+    overflow: auto; /* Active le défilement si nécessaire */
+    padding: 20px; /* Espace autour du contenu */
+    box-sizing: border-box; /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
+  }
+  
+  
+  /* Autres styles CSS restent inchangés */
+  
+  
+  
+  /* Pour le Wild Guess */
+  @keyframes animate8345 {
+  
+    0%,
+    100% {
+      filter: hue-rotate(0deg);
+    }
+  
+    50% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  .loader {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #2d60ec, #3ccfda);
+    font-size: 30px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate8345 9s linear infinite;
+    font-weight: bold;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+  }
+  
+  /* Pour le Wild Guess */
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    width: 230px;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #fa0000;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  /* réussite */
+  
+  .succes {
+    color: #4CAF50; /* Vert */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /*couleur case*/
+  
+  .essai {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .essai-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .caracteristiques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Ajuste l'espace entre les caractéristiques */
+  }
+  
+  .caracteristiques div {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .vrai {
+    background-color: #4CAF50; /* Vert */
+  }
+  
+  .faux {
+    background-color: #F44336; /* Rouge */
+  }
+  
   font-family: Oswald, sans-serif;
 }
 
