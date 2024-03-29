@@ -28,18 +28,30 @@ body {
 
 .rectangle {
   position: absolute;
-  top: 200px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
-  left: 50%; /* Centre le rectangle horizontalement */
-  transform: translateX(-50%); /* Ajuste seulement horizontalement */
-  width: 1100px; /* Largeur fixe */
-  min-height: 300px; /* Hauteur minimale, permet au rectangle de s'agrandir */
-  background-color: #ffffff; /* Couleur de fond */
-  border-radius: 10px; /* Bords arrondis */
-  z-index: 1; /* S'assure qu'il est au-dessus des autres éléments */
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
-  overflow: auto; /* Active le défilement si nécessaire */
-  padding: 20px; /* Espace autour du contenu */
-  box-sizing: border-box; /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
+  top: 200px;
+  /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
+  left: 50%;
+  /* Centre le rectangle horizontalement */
+  transform: translateX(-50%);
+  /* Ajuste seulement horizontalement */
+  width: 1100px;
+  /* Largeur fixe */
+  min-height: 300px;
+  /* Hauteur minimale, permet au rectangle de s'agrandir */
+  background-color: #ffffff;
+  /* Couleur de fond */
+  border-radius: 10px;
+  /* Bords arrondis */
+  z-index: 1;
+  /* S'assure qu'il est au-dessus des autres éléments */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  /* Effet d'ombre */
+  overflow: auto;
+  /* Active le défilement si nécessaire */
+  padding: 20px;
+  /* Espace autour du contenu */
+  box-sizing: border-box;
+  /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
 }
 
 
@@ -68,11 +80,13 @@ body {
   -webkit-background-clip: text;
   animation: animate8345 9s linear infinite;
   font-weight: bold;
-  text-align: center;html {
+  text-align: center;
+
+  html {
     height: 100%;
     width: 100%;
   }
-  
+
   body {
     margin: 0;
     padding: 0;
@@ -80,7 +94,7 @@ body {
     background-size: cover;
     background-repeat: repeat;
   }
-  
+
   .divCentree {
     width: 50%;
     margin-left: auto;
@@ -89,47 +103,59 @@ body {
     align-items: center;
     text-align: center;
   }
-  
-  
+
+
   .texteCentre {
     text-align: center;
   }
-  
-  
+
+
   .rectangle {
     position: absolute;
-    top: 375px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
-    left: 50%; /* Centre le rectangle horizontalement */
-    transform: translateX(-50%); /* Ajuste seulement horizontalement */
-    width: 1500px; /* Largeur fixe */
-    min-height: 300px; /* Hauteur minimale, permet au rectangle de s'agrandir */
-    background-color: #ffffff; /* Couleur de fond */
-    border-radius: 10px; /* Bords arrondis */
-    z-index: 1; /* S'assure qu'il est au-dessus des autres éléments */
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
-    overflow: auto; /* Active le défilement si nécessaire */
-    padding: 20px; /* Espace autour du contenu */
-    box-sizing: border-box; /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
+    top: 375px;
+    /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
+    left: 50%;
+    /* Centre le rectangle horizontalement */
+    transform: translateX(-50%);
+    /* Ajuste seulement horizontalement */
+    width: 1500px;
+    /* Largeur fixe */
+    min-height: 300px;
+    /* Hauteur minimale, permet au rectangle de s'agrandir */
+    background-color: #ffffff;
+    /* Couleur de fond */
+    border-radius: 10px;
+    /* Bords arrondis */
+    z-index: 1;
+    /* S'assure qu'il est au-dessus des autres éléments */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    /* Effet d'ombre */
+    overflow: auto;
+    /* Active le défilement si nécessaire */
+    padding: 20px;
+    /* Espace autour du contenu */
+    box-sizing: border-box;
+    /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
   }
-  
-  
+
+
   /* Autres styles CSS restent inchangés */
-  
-  
-  
+
+
+
   /* Pour le Wild Guess */
   @keyframes animate8345 {
-  
+
     0%,
     100% {
       filter: hue-rotate(0deg);
     }
-  
+
     50% {
       filter: hue-rotate(360deg);
     }
   }
-  
+
   .loader {
     color: rgb(0, 0, 0);
     background: linear-gradient(to right, #2d60ec, #3ccfda);
@@ -141,9 +167,9 @@ body {
     text-align: center;
     font-family: Oswald, sans-serif;
   }
-  
+
   /* Pour le Wild Guess */
-  
+
   input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
@@ -152,54 +178,92 @@ body {
     font-size: 16px;
     width: 230px;
   }
-  
+
   input[type="text"]:focus {
     border-color: #fa0000;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   }
+
   /* réussite */
-  
+
   .succes {
-    color: #4CAF50; /* Vert */
+    color: #4CAF50;
+    /* Vert */
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
   }
-  
+
   /*couleur case*/
-  
+
   .essai {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
   }
-  
+
   .essai-info {
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+
+  /* Conteneur des caractéristiques */
   .caracteristiques {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Ajuste l'espace entre les caractéristiques */
+    justify-content: space-around;
+    /* Centrer les éléments horizontalement avec un espacement égal */
+    gap: 10px;
+    /* Espace entre les caractéristiques */
+    padding-left: 10px;
+    /* Ajuste l'espacement du côté gauche */
   }
-  
+
+
+  /* Style des cases de caractéristiques */
+  .caracteristiques div {
+    padding: 5px 10px;
+    /* Espace intérieur */
+    text-align: center;
+    /* Texte centré dans la case */
+    border-radius: 5px;
+    /* Bords arrondis */
+    min-width: 150px;
+    /* Largeur minimale de chaque case */
+  }
+
+  .caracteristiques td {
+    padding: 10px 20px;
+    /* Ajuste l'espacement intérieur des cellules */
+    min-width: 180px;
+    /* Largeur minimale des cellules */
+    text-align: center;
+    /* Texte centré dans la cellule */
+    border-radius: 8px;
+    /* Bords arrondis */
+  }
+
+
+
+
   .caracteristiques div {
     padding: 5px;
     border-radius: 5px;
     color: white;
   }
-  
+
   .vrai {
-    background-color: #4CAF50; /* Vert */
+    background-color: #4CAF50;
+    /* Vert */
   }
-  
+
   .faux {
-    background-color: #F44336; /* Rouge */
+    background-color: #F44336;
+    /* Rouge */
   }
-  
-  font-family: Oswald, sans-serif;
+
+  font-family: Oswald,
+  sans-serif;
 }
 
 /* Pour le Wild Guess */
@@ -222,43 +286,57 @@ input[type="text"]:focus {
 /* Structure de l'essai */
 .essai {
   display: flex;
-  align-items: center; /* Centre les éléments verticalement */
-  margin-bottom: 20px; /* Espace entre les essais */
+  align-items: center;
+  /* Centre les éléments verticalement */
+  margin-bottom: 20px;
+  /* Espace entre les essais */
 }
 
 /* Informations de l'animal et image */
 .essai-info {
   font-weight: bold;
-  margin-right: 20px; /* Espace après le nom de l'animal */
+  margin-right: 20px;
+  /* Espace après le nom de l'animal */
 }
 
 /* Conteneur des caractéristiques */
 .caracteristiques {
   display: flex;
-  gap: 10px; /* Espace entre les caractéristiques */
+  gap: 10px;
+  /* Espace entre les caractéristiques */
 }
 
 /* Style des cases de caractéristiques */
 .caracteristiques div {
-  padding: 5px 10px; /* Espace intérieur */
-  min-width: 120px; /* Largeur minimale de chaque case */
-  text-align: center; /* Texte centré dans la case */
-  border-radius: 5px; /* Bords arrondis */
+  padding: 5px 10px;
+  /* Espace intérieur */
+  min-width: 120px;
+  /* Largeur minimale de chaque case */
+  text-align: center;
+  /* Texte centré dans la case */
+  border-radius: 5px;
+  /* Bords arrondis */
 }
 
 /* Style pour les caractéristiques vraies et fausses */
 .vrai {
-  background-color: #68df6c; /* Vert */
+  background-color: #68df6c;
+  /* Vert */
 }
 
 .faux {
-  background-color: #f25f54; /* Rouge */
+  background-color: #f25f54;
+  /* Rouge */
 }
 
 /* Image de l'animal */
 .essai img {
-  width: 100px; /* Définis la largeur de l'image */
-  height: 100px; /* Définis la hauteur de l'image */
-  object-fit: cover; /* S'assure que l'image couvre la zone sans être déformée */
-  margin-right: 20px; /* Espace après l'image */
+  width: 100px;
+  /* Définis la largeur de l'image */
+  height: 100px;
+  /* Définis la hauteur de l'image */
+  object-fit: cover;
+  /* S'assure que l'image couvre la zone sans être déformée */
+  margin-right: 20px;
+  /* Espace après l'image */
 }
