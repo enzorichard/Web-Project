@@ -8,7 +8,10 @@ body {
   padding: 0;
   background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
+  /* Répéter verticalement */
+  background-attachment: fixed;
+  /* Fixer le fond d'écran lors du défilement */
 }
 
 .divCentree {
@@ -28,18 +31,30 @@ body {
 
 .rectangle {
   position: absolute;
-  top: 200px; /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
-  left: 50%; /* Centre le rectangle horizontalement */
-  transform: translateX(-50%); /* Ajuste seulement horizontalement */
-  width: 1100px; /* Largeur fixe */
-  min-height: 300px; /* Hauteur minimale, permet au rectangle de s'agrandir */
-  background-color: #ffffff; /* Couleur de fond */
-  border-radius: 10px; /* Bords arrondis */
-  z-index: 1; /* S'assure qu'il est au-dessus des autres éléments */
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5); /* Effet d'ombre */
-  overflow: auto; /* Active le défilement si nécessaire */
-  padding: 20px; /* Espace autour du contenu */
-  box-sizing: border-box; /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
+  top: 200px;
+  /* Ce sera le point de départ du haut du rectangle, et il s'étendra vers le bas à partir de là */
+  left: 50%;
+  /* Centre le rectangle horizontalement */
+  transform: translateX(-50%);
+  /* Ajuste seulement horizontalement */
+  width: 1100px;
+  /* Largeur fixe */
+  min-height: 300px;
+  /* Hauteur minimale, permet au rectangle de s'agrandir */
+  background-color: #ffffff;
+  /* Couleur de fond */
+  border-radius: 10px;
+  /* Bords arrondis */
+  z-index: 1;
+  /* S'assure qu'il est au-dessus des autres éléments */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  /* Effet d'ombre */
+  overflow: auto;
+  /* Active le défilement si nécessaire */
+  padding: 20px;
+  /* Espace autour du contenu */
+  box-sizing: border-box;
+  /* La bordure et le padding sont inclus dans la largeur et la hauteur totales */
 }
 
 
@@ -105,7 +120,8 @@ input[type="text"]:focus {
 .caracteristiques {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Ajuste l'espace entre les caractéristiques */
+  gap: 10px;
+  /* Ajuste l'espace entre les caractéristiques */
 }
 
 .caracteristiques div {
@@ -115,9 +131,11 @@ input[type="text"]:focus {
 }
 
 .vrai {
-  background-color: #68df6c; /* Vert */
+  background-color: #68df6c;
+  /* Vert */
 }
 
 .faux {
-  background-color: #f25f54; /* Rouge */
+  background-color: #f25f54;
+  /* Rouge */
 }

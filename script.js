@@ -67,7 +67,6 @@ function afficherResultatsEssais() {
   `).join('');
 }
 
-
 document.getElementById('userInput').addEventListener('keyup', function(event) {
   if (event.keyCode === 13) { // KeyCode 13 est la touche Entrée
     this.value = ''; // Vide le champ input
@@ -79,8 +78,6 @@ function effacerSurEntree(event) {
     document.getElementById('userInput').value = '';
   }
 }
-
-
 
 // Stocker les noms d'animaux pour les suggestions
 let animalNames = [];
@@ -115,6 +112,3 @@ function updateSuggestions(suggestions) {
     datalist.appendChild(option);
   });
 }
-
-
-
