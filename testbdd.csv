@@ -1,57 +1,92 @@
-Nom de l'animal;Habitat;Régime alimentaire;Type;Taille;Statut de conservation
-Lion;Terrestre;Carnivore;Mammifère;Grand;Vulnérable
-Éléphant;Terrestre;Herbivore;Mammifère;Très Grand;En danger
-Pingouin;Maritime;Carnivore;Oiseau;Petit;Préoccupation mineure
-Tigre;Terrestre;Carnivore;Mammifère;Grand;En danger
-Dauphin;Maritime;Carnivore;Mammifère;Moyen;Préoccupation mineure
-Gorille;Terrestre;Herbivore;Mammifère;Grand;En danger critique
-Python;Terrestre;Carnivore;Reptile;Grand;Préoccupation mineure
-Aigle royal;Aérien;Carnivore;Oiseau;Moyen;Préoccupation mineure
-Crocodile;Aquatique;Carnivore;Reptile;Grand;Préoccupation mineure
-Orque;Maritime;Carnivore;Mammifère;Très Grand;Vulnérable
-Koala;Terrestre;Herbivore;Mammifère;Petit;Vulnérable
-Chien;Terrestre;Omnivore;Mammifère;Variable;Domestiqué
-Chat;Terrestre;Carnivore;Mammifère;Petit;Domestiqué
-Poule;Terrestre;Omnivore;Oiseau;Petit;Domestiqué
-Canard;Aquatique;Omnivore;Oiseau;Petit;Domestiqué
-Souris;Terrestre;Omnivore;Mammifère;Très Petit;Préoccupation mineure
-Héron;Aquatique;Carnivore;Oiseau;Moyen;Préoccupation mineure
-Cheval;Terrestre;Herbivore;Mammifère;Grand;Domestiqué
-Abeille;Aérien;Herbivore;Insecte;Très Petit;Préoccupation mineure
-Pigeon;Aérien;Omnivore;Oiseau;Petit;Domestiqué
-Cochon;Terrestre;Omnivore;Mammifère;Moyen;Domestiqué
-Perroquet;Aérien;Omnivore;Oiseau;Petit;Vulnérable
-Vache;Terrestre;Herbivore;Mammifère;Grand;Domestiqué
-Coléoptère;Terrestre;Omnivore;Insecte;Très Petit;Préoccupation mineure
-Mouton;Terrestre;Herbivore;Mammifère;Moyen;Domestiqué
-Poulet;Terrestre;Omnivore;Oiseau;Petit;Domestiqué
-Rat;Terrestre;Omnivore;Mammifère;Petit;Préoccupation mineure
-Merle;Aérien;Omnivore;Oiseau;Petit;Préoccupation mineure
-Chèvre;Terrestre;Herbivore;Mammifère;Moyen;Domestiqué
-Papillon;Aérien;Herbivore;Insecte;Très Petit;Préoccupation mineure
-Libellule;Aquatique;Carnivore;Insecte;Petit;Préoccupation mineure
-Loup;Terrestre;Carnivore;Mammifère;Grand;Vulnérable
-Renard;Terrestre;Omnivore;Mammifère;Moyen;Préoccupation mineure
-Baleine bleue;Maritime;Carnivore;Mammifère;Très Grand;En danger
-Girafe;Terrestre;Herbivore;Mammifère;Très Grand;Vulnérable
-Hippopotame;Aquatique;Herbivore;Mammifère;Grand;Vulnérable
-Rhinocéros;Terrestre;Herbivore;Mammifère;Grand;En danger critique
-Panda;Terrestre;Herbivore;Mammifère;Moyen;Vulnérable
-Zèbre;Terrestre;Herbivore;Mammifère;Moyen;Préoccupation mineure
-Guépard;Terrestre;Carnivore;Mammifère;Moyen;Vulnérable
-Manchot empereur;Maritime;Carnivore;Oiseau;Moyen;Préoccupation mineure
-Tortue de mer;Aquatique;Herbivore;Reptile;Moyen;En danger
-Ours polaire;Terrestre;Carnivore;Mammifère;Grand;Vulnérable
-Jaguar;Terrestre;Carnivore;Mammifère;Moyen;Préoccupation mineure
-Fourmi;Terrestre;Omnivore;Insecte;Très Petit;Préoccupation mineure
-Scarabée;Terrestre;Omnivore;Insecte;Petit;Préoccupation mineure
-Lémurien;Terrestre;Herbivore;Mammifère;Petit;En danger
-Narval;Maritime;Carnivore;Mammifère;Grand;Préoccupation mineure
-Toucan;Aérien;Omnivore;Oiseau;Petit;Préoccupation mineure
-Kangourou;Terrestre;Herbivore;Mammifère;Moyen;Préoccupation mineure
-Paresseux;Terrestre;Herbivore;Mammifère;Petit;Préoccupation mineure
-Faucon;Aérien;Carnivore;Oiseau;Petit;Préoccupation mineure
-Salamandre;Terrestre;Carnivore;Amphibien;Petit;Préoccupation mineure
-Iguane;Terrestre;Herbivore;Reptile;Moyen;Préoccupation mineure
-Mamouth;Terrestre;Herbivore;Mammifère;Très Grand;Disparu
-Dodo;Terrestre;Omnivore;Oiseau;Moyen;Disparu
+Nom de l'animal;Habitat;Régime alimentaire;Type;Pelage;Couleur;Taille;Statut de conservation
+Lion;Terrestre;Carnivore;Mammifère;Poils;Orange;Grand;Vulnérable
+Éléphant;Terrestre;Herbivore;Mammifère;Peau;Gris;Très Grand;En danger
+Pingouin;Maritime;Carnivore;Oiseau;Plumes;Noir,Blanc;Petit;Préoccupation mineure
+Tigre;Terrestre;Carnivore;Mammifère;Poils;Orange,Noir;Grand;En danger
+Dauphin;Maritime;Carnivore;Mammifère;Peau;Gris;Moyen;Préoccupation mineure
+Gorille;Terrestre;Herbivore;Mammifère;Poils;Noir;Grand;En danger critique
+Python;Terrestre;Carnivore;Reptile;Ecailles;Variable;Grand;Préoccupation mineure
+Aigle royal;Aérien;Carnivore;Oiseau;Plumes;Marron;Moyen;Préoccupation mineure
+Crocodile;Aquatique;Carnivore;Reptile;Ecailles;Vert;Grand;Préoccupation mineure
+Orque;Maritime;Carnivore;Mammifère;Peau;Noir,Blanc;Très Grand;Vulnérable
+Koala;Terrestre;Herbivore;Mammifère;Poils;Gris;Petit;Vulnérable
+Chien;Terrestre;Omnivore;Mammifère;Poils;Variable;Variable;Domestiqué
+Chat;Terrestre;Carnivore;Mammifère;Poils;Variable;Petit;Domestiqué
+Poule;Terrestre;Omnivore;Oiseau;Plumes;Variable;Petit;Domestiqué
+Canard;Aquatique;Omnivore;Oiseau;Plumes;Vert,Marron;Petit;Domestiqué
+Souris;Terrestre;Omnivore;Mammifère;Poils;Gris;Très Petit;Préoccupation mineure
+Héron;Aquatique;Carnivore;Oiseau;Plumes;Gris;Moyen;Préoccupation mineure
+Cheval;Terrestre;Herbivore;Mammifère;Poils;Variable;Grand;Domestiqué
+Abeille;Aérien;Herbivore;Insecte;Poils;Jaune,Noir;Très Petit;Préoccupation mineure
+Pigeon;Aérien;Omnivore;Oiseau;Plumes;Gris;Petit;Domestiqué
+Cochon;Terrestre;Omnivore;Mammifère;Poils;Rose;Moyen;Domestiqué
+Perroquet;Aérien;Omnivore;Oiseau;Plumes;Variable;Petit;Vulnérable
+Vache;Terrestre;Herbivore;Mammifère;Poils;Variable;Grand;Domestiqué
+Coléoptère;Terrestre;Omnivore;Insecte;Carapace;Variable;Très Petit;Préoccupation mineure
+Mouton;Terrestre;Herbivore;Mammifère;Poils;Variable;Moyen;Domestiqué
+Poulet;Terrestre;Omnivore;Oiseau;Plumes;Variable;Petit;Domestiqué
+Rat;Terrestre;Omnivore;Mammifère;Poils;Gris;Petit;Préoccupation mineure
+Chèvre;Terrestre;Herbivore;Mammifère;Poils;Variable;Moyen;Domestiqué
+Papillon;Aérien;Herbivore;Insecte;Ailes;Variable;Très Petit;Préoccupation mineure
+Libellule;Aquatique;Carnivore;Insecte;Ailes;Variable;Petit;Préoccupation mineure
+Loup;Terrestre;Carnivore;Mammifère;Poils;Gris;Grand;Vulnérable
+Renard;Terrestre;Omnivore;Mammifère;Poils;Roux;Moyen;Préoccupation mineure
+Baleine bleue;Maritime;Carnivore;Mammifère;Peau;Bleu,Gris;Très Grand;En danger
+Girafe;Terrestre;Herbivore;Mammifère;Poils;Jaune,Marron;Très Grand;Vulnérable
+Hippopotame;Aquatique;Herbivore;Mammifère;Peau;Gris;Grand;Vulnérable
+Rhinocéros;Terrestre;Herbivore;Mammifère;Peau;Gris;Grand;En danger critique
+Panda;Terrestre;Herbivore;Mammifère;Poils;Noir,Blanc;Moyen;Vulnérable
+Zèbre;Terrestre;Herbivore;Mammifère;Poils;Noir,Blanc;Moyen;Préoccupation mineure
+Guépard;Terrestre;Carnivore;Mammifère;Poils;Jaune,Noir;Moyen;Vulnérable
+Manchot empereur;Maritime;Carnivore;Oiseau;Plumes;Noir,Blanc;Moyen;Préoccupation mineure
+Tortue de mer;Aquatique;Herbivore;Reptile;Ecailles;Vert;Moyen;En danger
+Ours polaire;Terrestre;Carnivore;Mammifère;Poils;Blanc;Grand;Vulnérable
+Jaguar;Terrestre;Carnivore;Mammifère;Poils;Jaune,Noir;Moyen;Préoccupation mineure
+Fourmi;Terrestre;Omnivore;Insecte;Carapace;Noir;Très Petit;Préoccupation mineure
+Scarabée;Terrestre;Omnivore;Insecte;Carapace;Noir;Petit;Préoccupation mineure
+Lémurien;Terrestre;Herbivore;Mammifère;Poils;Gris;Petit;En danger
+Narval;Maritime;Carnivore;Mammifère;Peau;Blanc;Grand;Préoccupation mineure
+Toucan;Aérien;Omnivore;Oiseau;Plumes;Noir;Petit;Préoccupation mineure
+Kangourou;Terrestre;Herbivore;Mammifère;Poils;Marron;Moyen;Préoccupation mineure
+Paresseux;Terrestre;Herbivore;Mammifère;Poils;Marron;Petit;Préoccupation mineure
+Faucon;Aérien;Carnivore;Oiseau;Plumes;Marron;Petit;Préoccupation mineure
+Salamandre;Terrestre;Carnivore;Amphibien;Peau;Noir,Jaune;Petit;Préoccupation mineure
+Iguane;Terrestre;Herbivore;Reptile;Ecailles;Vert;Moyen;Préoccupation mineure
+Mammouth;Terrestre;Herbivore;Mammifère;Poils;Marron;Très Grand;Disparu
+Dodo;Terrestre;Omnivore;Oiseau;Plumes;Marron;Moyen;Disparu
+Fennec;Terrestre;Omnivore;Mammifère;Poils;Beige;Petit;Préoccupation mineure
+Chameau;Terrestre;Herbivore;Mammifère;Poils;Beige;Grand;Domestiqué
+Élan;Terrestre;Herbivore;Mammifère;Poils;Marron;Grand;Vulnérable
+Tapir;Terrestre;Herbivore;Mammifère;Poils;Gris;Moyen;Vulnérable
+Dingo;Terrestre;Carnivore;Mammifère;Poils;Marron;Moyen;Vulnérable
+Antilope;Terrestre;Herbivore;Mammifère;Poils;Marron;Moyen;Vulnérable
+Coyote;Terrestre;Carnivore;Mammifère;Poils;Gris;Moyen;Préoccupation mineure
+Dromadaire;Terrestre;Herbivore;Mammifère;Poils;Marron;Grand;Domestiqué
+Taureau;Terrestre;Herbivore;Mammifère;Poils;Noir;Grand;Variable
+Castor;Aquatique;Herbivore;Mammifère;Poils;Marron;Moyen;Variable
+Requin;Aquatique;Carnivore;Poisson;Écailles;Bleu;Grand;Préoccupation mineure
+Hippocampe;Maritime;Carnivore;Poisson;Écailles;Variable;Petit;Variable
+Grenouille;Aquatique;Omnivore;Amphibien;Peau;Vert;Petit;Préoccupation mineure
+Crapaud;Terrestre;Carnivore;Amphibien;Peau;Vert;Moyen;Préoccupation mineure
+Autruche;Terrestre;Omnivore;Oiseau;Plumes;Marron;Grand;Préoccupation mineure
+Raie;Aquatique;Piscivore;Poisson;Peau;Bleu;Grand;Préoccupation mineure
+Huître;Aquatique;Filtrateur;Mollusque;Coquille;Gris;Petit;Variable
+Oursin;Aquatique;Herbivore;Échinoderme;Épines;Marron;Petit;Variable
+Crabe;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Variable
+Étoile de mer;Aquatique;Carnivore;Échinoderme;Bras;Marron;Petit;Variable
+Homard;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Variable
+Calamar;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Variable
+Poulpe;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Variable
+Araignée;Terrestre;Carnivore;Arthropode;Poils;Noir;Petit;Préoccupation mineure
+Écureuil;Terrestre;Herbivore;Mammifère;Poils;Marron;Petit;Préoccupation mineure
+Lama;Terrestre;Herbivore;Mammifère;Poils;Beige;Moyen;Domestiqué
+Alpaga;Terrestre;Herbivore;Mammifère;Poils;Beige;Petit;Domestiqué
+Furet;Terrestre;Carnivore;Mammifère;Poils;Marron;Petit;Domestiqué
+Cafard;Terrestre;Omnivore;Insecte;Carapace;Marron;Petit;Préoccupation mineure
+Moule;Aquatique;Filtrateur;Mollusque;Coquille;Noire;Petit;Variable
+Mante religieuse;Terrestre;Carnivore;Insecte;Carapace;Verte;Petit;Préoccupation mineure
+Sauterelle;Terrestre;Herbivore;Insecte;Ailes;Variable;Petit;Préoccupation mineure
+Coccinelle;Terrestre;Herbivore;Insecte;Carapace;Rouge,Noir;Petit;Préoccupation mineure
+Palourde;Aquatique;Filtrateur;Mollusque;Coquille;Marron;Petit;Variable
+Langouste;Aquatique;Carnivore;Arthropode;Carapace;Marron;Moyen;Variable
+Crevette;Aquatique;Omnivore;Arthropode;Carapace;Orange;Petit;Variable
