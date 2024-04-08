@@ -77,3 +77,16 @@ Crabe;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Variable
 Homard;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Variable
 Calamar;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Variable
 Poulpe;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Variable
+Araignée;Terrestre;Carnivore;Arthropode;Poils;Noir;Petit;Préoccupation mineure
+Écureuil;Terrestre;Herbivore;Mammifère;Poils;Marron;Petit;Préoccupation mineure
+Lama;Terrestre;Herbivore;Mammifère;Poils;Beige;Moyen;Domestiqué
+Alpaga;Terrestre;Herbivore;Mammifère;Poils;Beige;Petit;Domestiqué
+Furet;Terrestre;Carnivore;Mammifère;Poils;Marron;Petit;Domestiqué
+Cafard;Terrestre;Omnivore;Insecte;Carapace;Marron;Petit;Préoccupation mineure
+Moule;Aquatique;Filtrateur;Mollusque;Coquille;Noire;Petit;Variable
+Mante religieuse;Terrestre;Carnivore;Insecte;Carapace;Verte;Petit;Préoccupation mineure
+Sauterelle;Terrestre;Herbivore;Insecte;Ailes;Variable;Petit;Préoccupation mineure
+Coccinelle;Terrestre;Herbivore;Insecte;Carapace;Rouge,Noir;Petit;Préoccupation mineure
+Palourde;Aquatique;Filtrateur;Mollusque;Coquille;Marron;Petit;Variable
+Langouste;Aquatique;Carnivore;Arthropode;Carapace;Marron;Moyen;Variable
+Crevette;Aquatique;Omnivore;Arthropode;Carapace;Orange;Petit;Variable
