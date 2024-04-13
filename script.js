@@ -22,7 +22,6 @@ fetch('testbdd.csv')
       if (!animalEntree) {
         afficherMessageErreur("L'animal n'appartient pas à la base de données");
         return;
-        return;
       }
 
       const resultatEssai = {
@@ -38,8 +37,9 @@ fetch('testbdd.csv')
   .catch(error => console.error('Erreur lors de la récupération des données:', error));
 
 function afficherMessageErreur(message) {
-  const erreurElement = document.getElementById('resultat');
+  const erreurElement = document.getElementById('erreur');
   erreurElement.innerHTML = `<div style="color: red;">${message}</div>`;
+  //erreurElement.innerHTML = message;
 }
 
 function calculerCorrespondances(animalEntree, animalChoisi) {
@@ -53,6 +53,7 @@ function calculerCorrespondances(animalEntree, animalChoisi) {
     statutConservation: animalEntree.statutConservation === animalChoisi.statutConservation,
   };
 }
+
 function afficherResultatsEssais(animalChoisi) {
   const resultatElement = document.getElementById('resultat');
 
@@ -60,15 +61,17 @@ function afficherResultatsEssais(animalChoisi) {
   const dernierEssai = resultatsEssais[resultatsEssais.length - 1];
   if (dernierEssai && dernierEssai.userInput === animalChoisi.name.toLowerCase()) {
     // URL de la page de victoire ou toute autre page que tu souhaites afficher
-    const urlDeVictoire = 'http://localhost/projet%20web/gagne.html';
+    //const urlDeVictoire = 'http://localhost/projet%20web/gagne.html';
+    const urlDeVictoire = './gagne.html';
 
     // Affiche un message de succès avant de rediriger
-    resultatElement.innerHTML = `<div class="succes">Bien joué, c'était : ${animalChoisi.name}</div>`;
+    //resultatElement.innerHTML = `<div class="succes">Bien joué, c'était : ${animalChoisi.name}</div>`;
 
+    window.location.href = urlDeVictoire;
     // Utilise setTimeout pour laisser un peu de temps afin que l'utilisateur puisse lire le message
-    setTimeout(() => {
-      window.location.href = urlDeVictoire;
-    }, 2000); // Redirige après 2 secondes
+    // setTimeout(() => {
+    //   window.location.href = urlDeVictoire;
+    // }, 2000); // Redirige après 2 secondes
   } else {
     let essaisHTML = ''; // Initialise une chaîne vide pour stocker les essais sous forme HTML
 

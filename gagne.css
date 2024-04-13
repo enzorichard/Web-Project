@@ -1,11 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 /* Pour le Wild Guess */
 @keyframes animate8345 {
 
@@ -29,6 +21,312 @@ body {
   font-weight: bold;
   text-align: center;
   font-family: Oswald, sans-serif;
+  position: absolute;
 }
 
-/* Pour le Wild Guess */
+.titreWildGuess {
+
+  top: 20px;
+  /* Ajustez la valeur selon votre préférence */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  /* Couleur du texte */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://files.u-angers.fr/data/f-abb59789a3d07573a24053df.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  /* Utiliser flexbox pour la mise en page */
+  justify-content: center;
+  /* Centrer horizontalement */
+  align-items: center;
+  /* Centrer verticalement */
+  height: 100vh;
+  /* Hauteur de la vue à 100% */
+}
+
+/* Pour centrer le contenu */
+.centrale {
+  text-align: center;
+  /* Centrer le texte horizontalement */
+}
+
+/* Pour le conteneur */
+.container {
+  background-color: #ffffff;
+  /* Couleur de fond blanche */
+  padding: 100px 50px;
+  /* Espacement autour du contenu */
+  border-radius: 10px;
+  /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Ombre portée */
+  text-align: center;
+  /* Centrage du contenu */
+  position: relative;
+  /* Définir la position relative */
+  top: 50px;
+  /* Déplacer vers le bas de 50 pixels */
+}
+
+/* Pour le titre "Bravo tu as trouvé l'animal mystère" */
+.grandTitre {
+  font-size: 36px;
+  color: #000000;
+  /* Couleur du texte noire */
+  margin-bottom: 20px;
+  /* Espacement en bas du titre */
+  margin-top: -50px;
+  /* Remonter le titre de 50 pixels */
+}
+
+
+/* Pour le texte "L'animal mystère était : Nom de l'animal mystère" */
+.nomAnimal {
+  font-size: 24px;
+  color: #000000;
+  /* Couleur du texte noire */
+  margin-bottom: 130px;
+  /* Augmente l'espace entre le texte et l'image */
+  /* Espacement en bas du texte */
+}
+
+/* Pour le span contenant le nom de l'animal mystère */
+.nomAnimal span {
+  font-weight: bold;
+  /* Texte en gras */
+}
+
+/* Pour l'image de l'animal mystère */
+.imageAnimal {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Ombre portée */
+}
+
+/* Pour les confettis */
+.confetti {
+  position: absolute;
+  width: 8px;
+  /* Augmenter légèrement la taille des confettis */
+  height: 8px;
+  /* Augmenter légèrement la taille des confettis */
+  background-color: transparent;
+  border-radius: 50%;
+  animation: fall 5s ease infinite;
+  /* Conserver la durée de l'animation */
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(24vh);
+    /* Faire commencer les confettis un peu plus haut */
+  }
+
+  100% {
+    transform: translateY(70vh);
+    /* Faire terminer les confettis un peu plus bas */
+  }
+}
+
+/* Couleur des confettis */
+.confetti:nth-child(3) {
+  background-color: #ffff38;
+}
+
+.confetti:nth-child(4) {
+  background-color: #4ce14c;
+}
+
+.confetti:nth-child(5) {
+  background-color: #3f3f92;
+}
+
+.confetti:nth-child(6) {
+  background-color: #ba64f7;
+}
+
+.confetti:nth-child(7) {
+  background-color: #ff4d9a;
+}
+
+.confetti:nth-child(8) {
+  background-color: #d25151;
+}
+
+.confetti:nth-child(9) {
+  background-color: #660036;
+}
+
+.confetti:nth-child(10) {
+  background-color: #2b5f5f;
+}
+
+.confetti:nth-child(11) {
+  background-color: #78bfbf;
+}
+
+.confetti:nth-child(12) {
+  background-color: #00FFFF;
+}
+
+.confetti:nth-child(13) {
+  background-color: #cf542a;
+}
+
+.confetti:nth-child(14) {
+  background-color: #00ff40;
+}
+
+.confetti:nth-child(15) {
+  background-color: #8000ff;
+}
+
+.confetti:nth-child(16) {
+  background-color: #ff00a2;
+}
+
+.confetti:nth-child(17) {
+  background-color: #ff2600;
+}
+
+.confetti:nth-child(18) {
+  background-color: #ffe252;
+}
+
+.confetti:nth-child(19) {
+  background-color: #57ffa8;
+}
+
+.confetti:nth-child(20) {
+  background-color: #ffa27a;
+}
+
+.confetti:nth-child(21) {
+  background-color: #f358fe;
+}
+
+.confetti:nth-child(22) {
+  background-color: #8067fe;
+}
+
+.confetti:nth-child(23) {
+  background-color: #fe9fc8;
+}
+
+.confetti:nth-child(24) {
+  background-color: #87c059;
+}
+
+.confetti:nth-child(25) {
+  background-color: #5c0000;
+}
+
+.confetti:nth-child(26) {
+  background-color: #a47846;
+}
+
+.confetti:nth-child(27) {
+  background-color: #ffff38;
+}
+
+.confetti:nth-child(28) {
+  background-color: #4ce14c;
+}
+
+.confetti:nth-child(29) {
+  background-color: #3f3f92;
+}
+
+.confetti:nth-child(30) {
+  background-color: #ba64f7;
+}
+
+.confetti:nth-child(31) {
+  background-color: #ff4d9a;
+}
+
+.confetti:nth-child(32) {
+  background-color: #d25151;
+}
+
+.confetti:nth-child(33) {
+  background-color: #660036;
+}
+
+.confetti:nth-child(34) {
+  background-color: #2b5f5f;
+}
+
+.confetti:nth-child(35) {
+  background-color: #78bfbf;
+}
+
+.confetti:nth-child(36) {
+  background-color: #00FFFF;
+}
+
+.confetti:nth-child(37) {
+  background-color: #cf542a;
+}
+
+.confetti:nth-child(38) {
+  background-color: #00ff40;
+}
+
+.confetti:nth-child(39) {
+  background-color: #8000ff;
+}
+
+.confetti:nth-child(40) {
+  background-color: #ff00a2;
+}
+
+.confetti:nth-child(41) {
+  background-color: #ff2600;
+}
+
+.confetti:nth-child(42) {
+  background-color: #ffe252;
+}
+
+.confetti:nth-child(43) {
+  background-color: #57ffa8;
+}
+
+.confetti:nth-child(44) {
+  background-color: #ffa27a;
+}
+
+.confetti:nth-child(45) {
+  background-color: #f358fe;
+}
+
+.confetti:nth-child(46) {
+  background-color: #8067fe;
+}
+
+.confetti:nth-child(47) {
+  background-color: #fe9fc8;
+}
+
+.confetti:nth-child(48) {
+  background-color: #87c059;
+}
+
+.confetti:nth-child(49) {
+  background-color: #5c0000;
+}
+
+.confetti:nth-child(50) {
+  background-color: #a47846;
+}

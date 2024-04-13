@@ -6,7 +6,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');
+  /*background-image: url('https://files.u-angers.fr/data/f-3362b606b172faa8.jpg');*/
+  background-image: url('https://files.u-angers.fr/data/f-abb59789a3d07573a24053df.jpg');
   background-size: cover;
   background-repeat: repeat;
 }
@@ -71,6 +72,7 @@ body {
     filter: hue-rotate(360deg);
   }
 }
+
 
 .loader {
   color: rgb(0, 0, 0);
