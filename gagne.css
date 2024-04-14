@@ -1,45 +1,540 @@
-<!DOCTYPE html>
-<html>
+/* Pour le Wild Guess */
+@keyframes animate8345 {
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Bravo</title>
-  <link rel="icon" href="https://files.u-angers.fr/data/f-6de69bd9983ca91ddb95e89e.png" type="image/x-icon">
-  <link href="gagne.css" rel="stylesheet" type="text/css" />
-</head>
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
 
-<body>
-  <div class="divCentree">
-    <h1 class="loader titreWildGuess">Wild Guess</h1>
-  </div>
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
 
-  <div class="container">
-    <!-- Titre "Bravo tu as trouvé l'animal mystère" -->
-    <h1 class="grandTitre">Bravo tu as trouvé l'animal mystère !</h1>
+/* Pour le Wild Guess */
+.loader {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to right, #2d60ec, #3ccfda);
+  font-size: 30px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate8345 9s linear infinite;
+  font-weight: bold;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  position: absolute;
+}
 
-    <!-- Texte "L'animal mystère était : Nom de l'animal mystère" -->
-    <div class="textContainer">
-      <h2 class="nomAnimal">L'animal mystère était : <span id="animalMystere">Nom de l'animal mystère</span></h2>
-    </div>
+/* Pour le Wild Guess */
+.titreWildGuess {
+  top: 0px;
+  /* Ajustez la valeur selon votre préférence */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  /* Couleur du texte */
+}
 
-    <!-- Image de l'animal mystère -->
-    <div class="imageContainer" id="imageAnimal">
-      <img src="chemin/vers/animal/mystère.jpg" alt="Animal Mystère" class="imageAnimal">
-    </div>
-  </div>
 
-  <div class="truc1"></div>
-  <div class="truc2"></div>
-  <div class="truc3"></div>
-  <div class="truc4"></div>
-  <div class="truc5"></div>
-  <div class="truc6"></div>
-  <div class="truc7"></div>
-  
-  <!-- <script src="script.js"></script> -->
-  <script src="gagne.js"></script>
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://files.u-angers.fr/data/f-abb59789a3d07573a24053df.jpg');
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  display: flex;
+  /* Utiliser flexbox pour la mise en page */
+  justify-content: center;
+  /* Centrer horizontalement */
+  align-items: center;
+  /* Centrer verticalement */
+  height: 100vh;
+  /* Hauteur de la vue à 100% */
+}
 
-</body>
+/* Pour centrer le contenu */
+.centrale {
+  text-align: center;
+  /* Centrer le texte horizontalement */
+}
 
-</html>
+/* Pour le conteneur */
+.container {
+  background-color: #ffffff;
+  /* Couleur de fond blanche */
+  padding: 80px 60px;
+  /* Espacement autour du contenu */
+  border-radius: 10px;
+  /* Coins arrondis */
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  /* Ombre portée */
+  text-align: center;
+  /* Centrage du contenu */
+  position: relative;
+  /* Définir la position relative */
+}
+
+/* Pour le titre "Bravo tu as trouvé l'animal mystère" */
+.grandTitre {
+  font-size: 36px;
+  color: #000000;
+  /* Couleur du texte noire */
+  margin-bottom: 20px;
+  /* Espacement en bas du titre */
+  margin-top: -50px;
+  /* Remonter le titre de 50 pixels */
+}
+
+
+/* Pour le texte "L'animal mystère était : Nom de l'animal mystère" */
+.nomAnimal {
+  font-size: 24px;
+  color: #000000;
+  /* Couleur du texte noire */
+  margin-bottom: 80px;
+  /* Augmente l'espace entre le texte et l'image */
+}
+
+/* Pour le span contenant le nom de l'animal mystère */
+.nomAnimal span {
+  font-weight: bold;
+  /* Texte en gras */
+}
+
+/* Pour l'image de l'animal mystère */
+.imageAnimal {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Feu d'artifice */
+.truc1 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 28%;
+  /* Ajustez la position verticale */
+  left: 80%;
+  /* Ajustez la position horizontale */
+}
+
+
+.truc1::before,
+.truc1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 1px, #9e0020 100%, transparent 0),
+    radial-gradient(circle 1px, #ff3d3d 100%, transparent 0),
+    radial-gradient(circle 1px, #ff0095 100%, transparent 0),
+    radial-gradient(circle 1px, #ff52a5 100%, transparent 0),
+    radial-gradient(circle 1px, #ff7300 100%, transparent 0),
+    radial-gradient(circle 1px, #fecf4d 100%, transparent 0),
+    radial-gradient(circle 1px, #c13e72 100%, transparent 0),
+    radial-gradient(circle 1px, #8c00ff 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast1 1.3s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast1 {
+
+  0%,
+  1% {
+    font-size: 0.01px;
+  }
+
+  50% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
+
+/* Deuxième élément "truc" */
+.truc2 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 23%;
+  /* Ajustez la position verticale */
+  left: 13%;
+  /* Ajustez la position horizontale */
+}
+
+.truc2::before,
+.truc2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 1.6px, #a271fe 100%, transparent 0),
+    radial-gradient(circle 1.6px, #6000d6 100%, transparent 0),
+    radial-gradient(circle 1.6px, #5c67ff 100%, transparent 0),
+    radial-gradient(circle 1.6px, #001eff 100%, transparent 0),
+    radial-gradient(circle 1.6px, #58fefb 100%, transparent 0),
+    radial-gradient(circle 1.6px, #00eeff 100%, transparent 0),
+    radial-gradient(circle 1.6px, #4dfe9a 100%, transparent 0),
+    radial-gradient(circle 1.6px, #00ff11 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast2 1s ease-in infinite;
+  /* Nouvelle animation */
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast2 {
+
+  0%,
+  30% {
+    font-size: 0.01px;
+  }
+
+  80% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
+
+.truc3 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 65%;
+  /* Ajustez la position verticale */
+  left: 77%;
+  /* Ajustez la position horizontale */
+}
+
+
+.truc3::before,
+.truc3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 1.9px, #7a7a7a 100%, transparent 0),
+    radial-gradient(circle 1.9px, #c4c4c4 100%, transparent 0),
+    radial-gradient(circle 1.9px, #8f8f8f 100%, transparent 0),
+    radial-gradient(circle 1.9px, #707070 100%, transparent 0),
+    radial-gradient(circle 1.9px, #5c5c5c 100%, transparent 0),
+    radial-gradient(circle 1.9px, #454545 100%, transparent 0),
+    radial-gradient(circle 1.9px, #383838 100%, transparent 0),
+    radial-gradient(circle 1.9px, #000000 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast3 1.8s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast3 {
+
+  0%,
+  10% {
+    font-size: 0.01px;
+  }
+
+  60% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
+
+.truc4 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 77%;
+  /* Ajustez la position verticale */
+  left: 1%;
+  /* Ajustez la position horizontale */
+}
+
+
+.truc4::before,
+.truc4::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 2.2px, #d4ff00 100%, transparent 0),
+    radial-gradient(circle 2.2px, #ff7b00 100%, transparent 0),
+    radial-gradient(circle 2.2px, #ff00bb 100%, transparent 0),
+    radial-gradient(circle 2.2px, #ff0000 100%, transparent 0),
+    radial-gradient(circle 2.2px, #3700ff 100%, transparent 0),
+    radial-gradient(circle 2.2px, #00e1ff 100%, transparent 0),
+    radial-gradient(circle 2.2px, #2bff00 100%, transparent 0),
+    radial-gradient(circle 2.2px, #824d30 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast4 1.25s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast4 {
+
+  0%,
+  20% {
+    font-size: 0.01px;
+  }
+
+  80% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
+
+.truc5 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 57%;
+  /* Ajustez la position verticale */
+  left: 16%;
+  /* Ajustez la position horizontale */
+}
+
+
+.truc5::before,
+.truc5::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 1px, #00ff04 100%, transparent 0),
+    radial-gradient(circle 1px, #00ff33 100%, transparent 0),
+    radial-gradient(circle 1px, #00ff40 100%, transparent 0),
+    radial-gradient(circle 1px, #04ff00 100%, transparent 0),
+    radial-gradient(circle 1px, #288500 100%, transparent 0),
+    radial-gradient(circle 1px, #00a31b 100%, transparent 0),
+    radial-gradient(circle 1px, #00ad0c 100%, transparent 0),
+    radial-gradient(circle 1px, #009425 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast5 1.8s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast5 {
+
+  0%,
+  15% {
+    font-size: 0.01px;
+  }
+
+  85% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
+
+.truc6 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 8%;
+  /* Ajustez la position verticale */
+  left: 56%;
+  /* Ajustez la position horizontale */
+}
+
+
+.truc6::before,
+.truc6::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 0.7px, #ff0033 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff0000 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff0026 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff0026 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff00c8 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff00d0 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff00c8 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff00dd 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast6 2s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast6 {
+
+  0%,
+  10% {
+    font-size: 0.01px;
+  }
+
+  60% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
+
+.truc7 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 74%;
+  /* Ajustez la position verticale */
+  left: 36%;
+  /* Ajustez la position horizontale */
+}
+
+
+.truc7::before,
+.truc7::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 0.9px, #ff0033 100%, transparent 0),
+    radial-gradient(circle 0.9px, #9900ff 100%, transparent 0),
+    radial-gradient(circle 0.9px, #00ff9d 100%, transparent 0),
+    radial-gradient(circle 0.9px, #ffc800 100%, transparent 0),
+    radial-gradient(circle 0.9px, #001eff 100%, transparent 0),
+    radial-gradient(circle 0.9px, #528bff 100%, transparent 0),
+    radial-gradient(circle 0.9px, #c8ff00 100%, transparent 0),
+    radial-gradient(circle 0.9px, #37ff00 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast7 2s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast7 {
+
+  0%,
+  10% {
+    font-size: 0.01px;
+  }
+
+  60% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
