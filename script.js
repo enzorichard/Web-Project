@@ -166,7 +166,7 @@ fetch('testbdd.csv')
     userInput.addEventListener('input', function() {
       //const inputText = removeAccents(this.value.toLowerCase()); // Convertir en minuscules
       const inputText = this.value.toLowerCase();
-      console.log("entrée : " + inputText);
+      //console.log("entrée : " + inputText);
       if (inputText.length > 0) {
         //console.log("animalName : " + removeAccents(animalNames[89].toLowerCase()));
         // if (removeAccents(animalNames[89].toLowerCase()).startsWith(inputText))
@@ -194,6 +194,3 @@ function updateSuggestions(suggestions) {
     datalist.appendChild(option);
   });
 }
-
-
-
