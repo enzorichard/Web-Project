@@ -17,9 +17,9 @@ Canard;Aquatique;Omnivore;Oiseau;Plumes;Vert, Marron;Petit;Domestiqué
 Souris;Terrestre;Omnivore;Mammifère;Poils;Gris;Très Petit;Sans danger
 Héron;Aquatique;Carnivore;Oiseau;Plumes;Gris;Moyen;Sans danger
 Cheval;Terrestre;Herbivore;Mammifère;Poils;Variable;Grand;Domestiqué
-Abeille;Aérien;Herbivore;Insecte;Poils;Jaune, Noir;Très Petit;Sans danger
+Abeille;Aérien;Herbivore;Insecte;Poils;Noir, Jaune;Très Petit;Sans danger
 Pigeon;Aérien;Omnivore;Oiseau;Plumes;Gris;Petit;Domestiqué
-Cochon;Terrestre;Omnivore;Mammifère;Poils;Rose;Moyen;Domestiqué
+Cochon;Terrestre;Omnivore;Mammifère;Poils;Beige;Moyen;Domestiqué
 Perroquet;Aérien;Omnivore;Oiseau;Plumes;Variable;Petit;Vulnérable
 Vache;Terrestre;Herbivore;Mammifère;Poils;Variable;Grand;Domestiqué
 Coléoptère;Terrestre;Omnivore;Insecte;Carapace;Variable;Très Petit;Sans danger
@@ -30,18 +30,18 @@ Chèvre;Terrestre;Herbivore;Mammifère;Poils;Variable;Moyen;Domestiqué
 Papillon;Aérien;Herbivore;Insecte;Ailes;Variable;Très Petit;Sans danger
 Libellule;Aquatique;Carnivore;Insecte;Ailes;Variable;Petit;Sans danger
 Loup;Terrestre;Carnivore;Mammifère;Poils;Gris;Grand;Vulnérable
-Renard;Terrestre;Omnivore;Mammifère;Poils;Roux;Moyen;Sans danger
-Baleine bleue;Maritime;Carnivore;Mammifère;Peau;Bleu, Gris;Très Grand;En danger
+Renard;Terrestre;Omnivore;Mammifère;Poils;Orange;Moyen;Sans danger
+Baleine bleue;Maritime;Carnivore;Mammifère;Peau;Bleu;Très Grand;En danger
 Girafe;Terrestre;Herbivore;Mammifère;Poils;Jaune, Marron;Très Grand;Vulnérable
 Hippopotame;Aquatique;Herbivore;Mammifère;Peau;Gris;Grand;Vulnérable
 Rhinocéros;Terrestre;Herbivore;Mammifère;Peau;Gris;Grand;En péril
 Panda;Terrestre;Herbivore;Mammifère;Poils;Noir, Blanc;Moyen;Vulnérable
 Zèbre;Terrestre;Herbivore;Mammifère;Poils;Noir, Blanc;Moyen;Sans danger
-Guépard;Terrestre;Carnivore;Mammifère;Poils;Jaune, Noir;Moyen;Vulnérable
+Guépard;Terrestre;Carnivore;Mammifère;Poils;Noir, Jaune;Moyen;Vulnérable
 Manchot empereur;Maritime;Carnivore;Oiseau;Plumes;Noir, Blanc;Moyen;Sans danger
 Tortue de mer;Aquatique;Herbivore;Reptile;Ecailles;Vert;Moyen;En danger
 Ours polaire;Terrestre;Carnivore;Mammifère;Poils;Blanc;Grand;Vulnérable
-Jaguar;Terrestre;Carnivore;Mammifère;Poils;Jaune, Noir;Moyen;Sans danger
+Jaguar;Terrestre;Carnivore;Mammifère;Poils;Noir, Jaune;Moyen;Sans danger
 Fourmi;Terrestre;Omnivore;Insecte;Carapace;Noir;Très Petit;Sans danger
 Scarabée;Terrestre;Omnivore;Insecte;Carapace;Noir;Petit;Sans danger
 Lémurien;Terrestre;Herbivore;Mammifère;Poils;Gris;Petit;En danger
@@ -83,8 +83,8 @@ Lama;Terrestre;Herbivore;Mammifère;Poils;Beige;Moyen;Domestiqué
 Alpaga;Terrestre;Herbivore;Mammifère;Poils;Beige;Petit;Domestiqué
 Furet;Terrestre;Carnivore;Mammifère;Poils;Marron;Petit;Domestiqué
 Cafard;Terrestre;Omnivore;Insecte;Carapace;Marron;Petit;Sans danger
-Moule;Aquatique;Filtrateur;Mollusque;Coquille;Noire;Petit;Variable
-Mante religieuse;Terrestre;Carnivore;Insecte;Carapace;Verte;Petit;Sans danger
+Moule;Aquatique;Filtrateur;Mollusque;Coquille;Noir;Petit;Variable
+Mante religieuse;Terrestre;Carnivore;Insecte;Carapace;Vert;Petit;Sans danger
 Sauterelle;Terrestre;Herbivore;Insecte;Ailes;Variable;Petit;Sans danger
 Coccinelle;Terrestre;Herbivore;Insecte;Carapace;Rouge, Noir;Petit;Sans danger
 Palourde;Aquatique;Filtrateur;Mollusque;Coquille;Marron;Petit;Variable
