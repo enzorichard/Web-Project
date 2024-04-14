@@ -1,57 +1,92 @@
-Nom de l'animal;Habitat;Alimentation;Couleur;Taille;Poids;Type
-Abeille;Jardin, prairie;Nectar, pollen;Noir, jaune;1;0.0001;Insecte
-Aigle;Montagnes, falaises;Petits mammifères, poissons;Brun, beige, blanc;75;6;Oiseau
-Autruche;Savanes, déserts;Plantes, graines, petits animaux;Noir et blanc;250;150;Oiseau
-Baleine;Océans;Plancton, petits poissons;Gris bleu;25;200000;Mammifère
-Caméléon;Forêts, savanes;Insectes, petits reptiles;Variable;20;0.1;Reptile
-Canard;Étangs, rivières;Herbe, petits poissons;Vert;32.5;1.25;Oiseau
-Chameau;Déserts, steppes;Plantes, feuilles, arbustes;Brun clair;250;600;Mammifère
-Chat;Domestique;Croquettes, poisson;Noir;40;5;Mammifère
-Cheval;Pré, écurie;Herbe, foin;Brun;200;500;Mammifère
-Chèvre;Ferme;Herbe, foin;Blanc;90;60;Mammifère
-Chien;Domestique;Croquettes, viande;Marron;50;15;Mammifère
-Chimpanzé;Forêts tropicales;Fruits, feuilles, insectes;Noir;150;50;Mammifère
-Chouette;Forêts, montagnes;Petits mammifères, oiseaux;Brun, blanc;35;0.6;Oiseau
-Coléoptère;Jardin, forêt;Décomposeurs;Noir;2;0.002;Insecte
-Colibri;Forêts, jardins;Nectar, petits insectes;Multicolore;2.5;0.0001;Oiseau
-Cochon;Ferme;Grains, déchets;Rose;150;80;Mammifère
-Crocodile;Rivières, marécages;Poissons, mammifères;Vert, brun;400;1000;Reptile
-Dauphin;Océan;Poissons;Gris;250;200;Mammifère
-Éléphant;Forêt, Savane;Feuilles ;Gris;300;5000;Mammifère
-Girafe;Savanes;Feuilles, fruits;Jaune, brun;550;1200;Mammifère
-Gorille;Forêt;Fruits, feuilles;Noir;160;200;Mammifère
-Guépard;Savanes;Viande;Jaune tacheté;70;60;Mammifère
-Héron;Étangs, marais;Poissons, grenouilles;Blanc, gris;100;2;Oiseau
-Hippocampe;Océans, mers;Petits crustacés, larves;Multicolore;10;0.05;Poisson
-Hippopotame;Rivières, lacs, marais;Herbe, plantes aquatiques;Gris brun;150;1500;Mammifère
-Kangourou;Forêts, prairies;Herbe, feuilles, écorce;Brun;150;50;Mammifère
-Koala;Forêts;Feuilles ;Gris, blanc;60;10;Mammifère
-Lapin;Champs, prairies;Herbe, légumes;Brun, blanc, gris;25;2;Mammifère
-Léopard;Forêts, savanes;Viande;Tacheté;70;60;Mammifères
-Libellule;Étangs, rivières;Petits insectes;Bleu;4;0.0005;Insecte
-Lion;Savane;Viande;Brun;190;190;Mammifère
-Loup;Forêts, montagnes;Petits mammifères, gibier;Gris;80;40;Mammifère
-Méduse;Océans;Plancton;Transparent;5;0.025;Invertébré
-Merle;Parc, jardin;Vers, insectes;Noir;25;0.1;Oiseau
-Mouton;Ferme;Herbe, foin;Blanc;100;70;Mammifère
-Ours;Forêts, montagnes;Fruits, poissons, viande;Brun;200;350;Mammifère
-Panda;Forêts de bambous;Bambou;Blanc et noir;150;100;Mammifère
-Panthère noire;Forêts tropicales;Viande;Noir;100;60;Mammifère
-Papillon;Jardin, prairie;Nectar;Multicolore;5;0.001;Insecte
-Perroquet;Forêt tropicale, maison;Fruits, graines;Rouge;30;0.4;Oiseau
-Pigeon;Ville, parc;Graines, petits insectes;Gris;30;0.3;Oiseau
-Pingouin;Antarctique;Poissons;Noir et Blanc;50;20;Oiseau
-Poule;Ferme;Graines, insectes;Blanc;30;2;Oiseau
-Poulet;Ferme;Graines, insectes;Rouge;30;1.5;Oiseau
-Python;Jungle, savane;Petits mammifères;Brun, beige;150;75;Reptile
-Raie;Océans;Crustacés, poissons;Brun;100;250;Poisson
-Renard;Forêts, plaines;Petits mammifères, fruits;Roux;40;5;Mammifère
-Requin;Océans;Poissons, phoques;Gris, blanc;400;300;Poisson
-Rhinocéros;Savanes, prairies;Herbe, buissons;Gris;180;2000;Mammifère
-Sanglier;Forêts, prairies;Plantes, fruits, insectes;Brun;150;100;Mammifère
-Serpent à sonnette;Déserts, prairies;Petits mammifères, oiseaux;Brun, beige;150;2;Reptile
-Souris;Maison, champs;Graines, déchets;Gris;10;0.03;Mammifère
-Tigre;Jungle;VIande;Orange avec des rayures noires;200;250;Mammifère
-Tortue;Forêts, océans, rivières;Plantes, fruits, insectes;Vert, brun;30;25;Reptile
-Toucan;Forêts tropicales;Fruits, insectes;Noir, multicolore;20;0.2;Oiseau
-Zèbre;Savanes, plaines;Herbe, feuilles;Rayé noir et blanc;300;500;Mammifère
+Nom de l'animal;Habitat;Régime alimentaire;Type;Pelage;Couleur;Taille;Statut de conservation
+Lion;Terrestre;Carnivore;Mammifère;Poils;Orange;Grand;Vulnérable
+Éléphant;Terrestre;Herbivore;Mammifère;Peau;Gris;Très Grand;En danger
+Pingouin;Maritime;Carnivore;Oiseau;Plumes;Noir, Blanc;Petit;Sans danger
+Tigre;Terrestre;Carnivore;Mammifère;Poils;Orange, Noir;Grand;En danger
+Dauphin;Maritime;Carnivore;Mammifère;Peau;Gris;Moyen;Sans danger
+Gorille;Terrestre;Herbivore;Mammifère;Poils;Noir;Grand;En péril
+Python;Terrestre;Carnivore;Reptile;Ecailles;Variable;Grand;Sans danger
+Aigle royal;Aérien;Carnivore;Oiseau;Plumes;Marron;Moyen;Sans danger
+Crocodile;Aquatique;Carnivore;Reptile;Ecailles;Vert;Grand;Sans danger
+Orque;Maritime;Carnivore;Mammifère;Peau;Noir, Blanc;Très Grand;Vulnérable
+Koala;Terrestre;Herbivore;Mammifère;Poils;Gris;Petit;Vulnérable
+Chien;Terrestre;Omnivore;Mammifère;Poils;Variable;Variable;Domestiqué
+Chat;Terrestre;Carnivore;Mammifère;Poils;Variable;Petit;Domestiqué
+Poule;Terrestre;Omnivore;Oiseau;Plumes;Variable;Petit;Domestiqué
+Canard;Aquatique;Omnivore;Oiseau;Plumes;Vert, Marron;Petit;Domestiqué
+Souris;Terrestre;Omnivore;Mammifère;Poils;Gris;Très Petit;Sans danger
+Héron;Aquatique;Carnivore;Oiseau;Plumes;Gris;Moyen;Sans danger
+Cheval;Terrestre;Herbivore;Mammifère;Poils;Variable;Grand;Domestiqué
+Abeille;Aérien;Herbivore;Insecte;Poils;Noir, Jaune;Très Petit;Sans danger
+Pigeon;Aérien;Omnivore;Oiseau;Plumes;Gris;Petit;Domestiqué
+Cochon;Terrestre;Omnivore;Mammifère;Poils;Beige;Moyen;Domestiqué
+Perroquet;Aérien;Omnivore;Oiseau;Plumes;Variable;Petit;Vulnérable
+Vache;Terrestre;Herbivore;Mammifère;Poils;Variable;Grand;Domestiqué
+Coléoptère;Terrestre;Omnivore;Insecte;Carapace;Variable;Très Petit;Sans danger
+Mouton;Terrestre;Herbivore;Mammifère;Poils;Variable;Moyen;Domestiqué
+Poulet;Terrestre;Omnivore;Oiseau;Plumes;Variable;Petit;Domestiqué
+Rat;Terrestre;Omnivore;Mammifère;Poils;Gris;Petit;Sans danger
+Chèvre;Terrestre;Herbivore;Mammifère;Poils;Variable;Moyen;Domestiqué
+Papillon;Aérien;Herbivore;Insecte;Ailes;Variable;Très Petit;Sans danger
+Libellule;Aquatique;Carnivore;Insecte;Ailes;Variable;Petit;Sans danger
+Loup;Terrestre;Carnivore;Mammifère;Poils;Gris;Grand;Vulnérable
+Renard;Terrestre;Omnivore;Mammifère;Poils;Orange;Moyen;Sans danger
+Baleine bleue;Maritime;Carnivore;Mammifère;Peau;Bleu;Très Grand;En danger
+Girafe;Terrestre;Herbivore;Mammifère;Poils;Jaune, Marron;Très Grand;Vulnérable
+Hippopotame;Aquatique;Herbivore;Mammifère;Peau;Gris;Grand;Vulnérable
+Rhinocéros;Terrestre;Herbivore;Mammifère;Peau;Gris;Grand;En péril
+Panda;Terrestre;Herbivore;Mammifère;Poils;Noir, Blanc;Moyen;Vulnérable
+Zèbre;Terrestre;Herbivore;Mammifère;Poils;Noir, Blanc;Moyen;Sans danger
+Guépard;Terrestre;Carnivore;Mammifère;Poils;Noir, Jaune;Moyen;Vulnérable
+Manchot empereur;Maritime;Carnivore;Oiseau;Plumes;Noir, Blanc;Moyen;Sans danger
+Tortue de mer;Aquatique;Herbivore;Reptile;Ecailles;Vert;Moyen;En danger
+Ours polaire;Terrestre;Carnivore;Mammifère;Poils;Blanc;Grand;Vulnérable
+Jaguar;Terrestre;Carnivore;Mammifère;Poils;Noir, Jaune;Moyen;Sans danger
+Fourmi;Terrestre;Omnivore;Insecte;Carapace;Noir;Très Petit;Sans danger
+Scarabée;Terrestre;Omnivore;Insecte;Carapace;Noir;Petit;Sans danger
+Lémurien;Terrestre;Herbivore;Mammifère;Poils;Gris;Petit;En danger
+Narval;Maritime;Carnivore;Mammifère;Peau;Blanc;Grand;Sans danger
+Toucan;Aérien;Omnivore;Oiseau;Plumes;Noir;Petit;Sans danger
+Kangourou;Terrestre;Herbivore;Mammifère;Poils;Marron;Moyen;Sans danger
+Paresseux;Terrestre;Herbivore;Mammifère;Poils;Marron;Petit;Sans danger
+Faucon;Aérien;Carnivore;Oiseau;Plumes;Marron;Petit;Sans danger
+Salamandre;Terrestre;Carnivore;Amphibien;Peau;Noir, Jaune;Petit;Sans danger
+Iguane;Terrestre;Herbivore;Reptile;Ecailles;Vert;Moyen;Sans danger
+Mammouth;Terrestre;Herbivore;Mammifère;Poils;Marron;Très Grand;Disparu
+Dodo;Terrestre;Omnivore;Oiseau;Plumes;Marron;Moyen;Disparu
+Fennec;Terrestre;Omnivore;Mammifère;Poils;Beige;Petit;Sans danger
+Chameau;Terrestre;Herbivore;Mammifère;Poils;Beige;Grand;Domestiqué
+Élan;Terrestre;Herbivore;Mammifère;Poils;Marron;Grand;Vulnérable
+Tapir;Terrestre;Herbivore;Mammifère;Poils;Gris;Moyen;Vulnérable
+Dingo;Terrestre;Carnivore;Mammifère;Poils;Marron;Moyen;Vulnérable
+Antilope;Terrestre;Herbivore;Mammifère;Poils;Marron;Moyen;Vulnérable
+Coyote;Terrestre;Carnivore;Mammifère;Poils;Gris;Moyen;Sans danger
+Dromadaire;Terrestre;Herbivore;Mammifère;Poils;Marron;Grand;Domestiqué
+Taureau;Terrestre;Herbivore;Mammifère;Poils;Noir;Grand;Variable
+Castor;Aquatique;Herbivore;Mammifère;Poils;Marron;Moyen;Variable
+Requin;Aquatique;Carnivore;Poisson;Écailles;Bleu;Grand;Sans danger
+Hippocampe;Maritime;Carnivore;Poisson;Écailles;Variable;Petit;Variable
+Grenouille;Aquatique;Omnivore;Amphibien;Peau;Vert;Petit;Sans danger
+Crapaud;Terrestre;Carnivore;Amphibien;Peau;Vert;Moyen;Sans danger
+Autruche;Terrestre;Omnivore;Oiseau;Plumes;Marron;Grand;Sans danger
+Raie;Aquatique;Piscivore;Poisson;Peau;Bleu;Grand;Sans danger
+Huître;Aquatique;Filtrateur;Mollusque;Coquille;Gris;Petit;Variable
+Oursin;Aquatique;Herbivore;Échinoderme;Épines;Marron;Petit;Variable
+Crabe;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Variable
+Étoile de mer;Aquatique;Carnivore;Échinoderme;Bras;Marron;Petit;Variable
+Homard;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Variable
+Calamar;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Variable
+Poulpe;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Variable
+Araignée;Terrestre;Carnivore;Arthropode;Poils;Noir;Petit;Sans danger
+Écureuil;Terrestre;Herbivore;Mammifère;Poils;Marron;Petit;Sans danger
+Lama;Terrestre;Herbivore;Mammifère;Poils;Beige;Moyen;Domestiqué
+Alpaga;Terrestre;Herbivore;Mammifère;Poils;Beige;Petit;Domestiqué
+Furet;Terrestre;Carnivore;Mammifère;Poils;Marron;Petit;Domestiqué
+Cafard;Terrestre;Omnivore;Insecte;Carapace;Marron;Petit;Sans danger
+Moule;Aquatique;Filtrateur;Mollusque;Coquille;Noir;Petit;Variable
+Mante religieuse;Terrestre;Carnivore;Insecte;Carapace;Vert;Petit;Sans danger
+Sauterelle;Terrestre;Herbivore;Insecte;Ailes;Variable;Petit;Sans danger
+Coccinelle;Terrestre;Herbivore;Insecte;Carapace;Rouge, Noir;Petit;Sans danger
+Palourde;Aquatique;Filtrateur;Mollusque;Coquille;Marron;Petit;Variable
+Langouste;Aquatique;Carnivore;Arthropode;Carapace;Marron;Moyen;Variable
+Crevette;Aquatique;Omnivore;Arthropode;Carapace;Orange;Petit;Variable
