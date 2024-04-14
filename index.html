@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Wild Guess</title>
+  <link rel="icon" href="https://files.u-angers.fr/data/f-6de69bd9983ca91ddb95e89e.png" type="image/x-icon">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -13,20 +14,23 @@
     <h1 class="loader">Wild Guess</h1>
   </div>
 
-
   <div class="divCentree">
     <h2>Choisis un animal !</h2>
     <div>
-      <form autocomplete="off"><input type="text" name="q" id="q" onKeyUp="showResults(this.value)" />
-      <div id="result"></div>
-      </form>
-      <input type="text" id="userInput" placeholder="Entrez un animal">
+      <!-- Ajout de la liste de suggestions pour l'autocomplétion -->
+      <input type="text" id="userInput" list="animauxList" placeholder="Entrez un animal">
+      <br><br>
+      <div id="erreur"></div>
+      <!-- Liste des options d'autocomplétion -->
+      <datalist id="animauxList"></datalist>
+
+
     </div>
   </div>
 
   <div class="rectangle">
 
-    <div id="resultat" class="divCentree"></div>
+    <div id="resultat"></div>
 
   </div>
 

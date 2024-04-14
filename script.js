@@ -95,18 +95,18 @@ function afficherResultatsEssais(animalChoisi) {
 
     // Ajoute les entêtes de tableau
     essaisHTML += `
-        <tr>
-          <th>Nom</th>
-          <th>Animal</th>
-          <th>Type</th>
-          <th>Habitat</th>
-          <th>Régime</th>
-          <th>Pelage</th>
-          <th>Couleur</th>
-          <th>Taille</th>
-          <th>Conservation</th>
-        </tr>
-      `;
+      <tr>
+        <th>Nom</th>
+        <th>Animal</th>
+        <th>Type</th>
+        <th>Habitat</th>
+        <th>Régime</th>
+        <th>Pelage</th>
+        <th>Couleur</th>
+        <th>Taille</th>
+        <th>Conservation</th>
+      </tr>
+    `;
 
     // Parcours le tableau des résultats dans l'ordre inverse
     for (let i = resultatsEssais.length - 1; i >= 0; i--) {
@@ -118,16 +118,16 @@ function afficherResultatsEssais(animalChoisi) {
 
       // Ajoute les informations de l'essai dans des cellules de tableau
       essaisHTML += `
-          <td>${resultatEssai.animalEntree.name}</td>
-          <td><img src="${cheminImage}" alt="Image de ${resultatEssai.animalEntree.name}"></td>    
-          <td class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.type}</td>
-          <td class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.habitat}</td>
-          <td class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.regimeAlimentaire}</td>
-          <td class="${resultatEssai.correspondances.pelage ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.pelage}</td>
-          <td class="${resultatEssai.correspondances.couleur ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.couleur}</td>
-          <td class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.taille}</td>
-          <td class="${resultatEssai.correspondances.statutConservation ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.statutConservation}</td>
-        `;
+        <td>${resultatEssai.animalEntree.name}</td>
+        <td><img src="${cheminImage}" alt="Image de ${resultatEssai.animalEntree.name}"></td>    
+        <td class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.type}</td>
+        <td class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.habitat}</td>
+        <td class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.regimeAlimentaire}</td>
+        <td class="${resultatEssai.correspondances.pelage ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.pelage}</td>
+        <td class="${resultatEssai.correspondances.couleur ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.couleur}</td>
+        <td class="${resultatEssai.correspondances.taille ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.taille}</td>
+        <td class="${resultatEssai.correspondances.statutConservation ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.statutConservation}</td>
+      `;
 
       // Fin de la ligne de tableau
       essaisHTML += '</tr>';
