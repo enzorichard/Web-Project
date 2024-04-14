@@ -159,21 +159,22 @@ fetch('testbdd.csv')
     // Extraire les noms d'animaux de chaque ligne
     animalNames = lines.map(line => line.split(';')[0].trim());
 
-    animalNames.sort()
+    animalNames.sort();
 
     // Afficher les suggestions lors de la saisie dans l'input
     const userInput = document.getElementById('userInput');
     userInput.addEventListener('input', function() {
       //const inputText = removeAccents(this.value.toLowerCase()); // Convertir en minuscules
       const inputText = this.value.toLowerCase();
-      //console.log("entrée : " + inputText);
+      console.log("entrée : " + inputText);
       if (inputText.length > 0) {
         //console.log("animalName : " + removeAccents(animalNames[89].toLowerCase()));
         // if (removeAccents(animalNames[89].toLowerCase()).startsWith(inputText))
         //   console.log("TEST");
         //const suggestions = animalNames.filter(name => removeAccents(name.toLowerCase()).startsWith(inputText));
-        //console.log("Nombre de suggestions : " + suggestions.length);
+
         const suggestions = animalNames.filter(name => name.toLowerCase().startsWith(inputText));
+        //console.log("Nombre de suggestions : " + suggestions.length);
         updateSuggestions(suggestions);
       }
       else {
