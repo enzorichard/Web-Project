@@ -11,6 +11,7 @@
   }
 }
 
+/* Pour le Wild Guess */
 .loader {
   color: rgb(0, 0, 0);
   background: linear-gradient(to right, #2d60ec, #3ccfda);
@@ -24,9 +25,9 @@
   position: absolute;
 }
 
+/* Pour le Wild Guess */
 .titreWildGuess {
-
-  top: 20px;
+  top: 0px;
   /* Ajustez la valeur selon votre préférence */
   left: 50%;
   transform: translateX(-50%);
@@ -39,8 +40,8 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('https://files.u-angers.fr/data/f-abb59789a3d07573a24053df.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-repeat: repeat;
   display: flex;
   /* Utiliser flexbox pour la mise en page */
   justify-content: center;
@@ -61,18 +62,16 @@ body {
 .container {
   background-color: #ffffff;
   /* Couleur de fond blanche */
-  padding: 100px 50px;
+  padding: 80px 60px;
   /* Espacement autour du contenu */
   border-radius: 10px;
   /* Coins arrondis */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   /* Ombre portée */
   text-align: center;
   /* Centrage du contenu */
   position: relative;
   /* Définir la position relative */
-  top: 50px;
-  /* Déplacer vers le bas de 50 pixels */
 }
 
 /* Pour le titre "Bravo tu as trouvé l'animal mystère" */
@@ -92,9 +91,8 @@ body {
   font-size: 24px;
   color: #000000;
   /* Couleur du texte noire */
-  margin-bottom: 130px;
+  margin-bottom: 80px;
   /* Augmente l'espace entre le texte et l'image */
-  /* Espacement en bas du texte */
 }
 
 /* Pour le span contenant le nom de l'animal mystère */
@@ -108,225 +106,435 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  /* Coins arrondis */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  /* Ombre portée */
 }
 
-/* Pour les confettis */
-.confetti {
+
+/* Feu d'artifice */
+.truc1 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
   position: absolute;
-  width: 8px;
-  /* Augmenter légèrement la taille des confettis */
-  height: 8px;
-  /* Augmenter légèrement la taille des confettis */
-  background-color: transparent;
-  border-radius: 50%;
-  animation: fall 5s ease infinite;
-  /* Conserver la durée de l'animation */
+  top: 28%;
+  /* Ajustez la position verticale */
+  left: 80%;
+  /* Ajustez la position horizontale */
 }
 
-@keyframes fall {
-  0% {
-    transform: translateY(24vh);
-    /* Faire commencer les confettis un peu plus haut */
+
+.truc1::before,
+.truc1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 1px, #9e0020 100%, transparent 0),
+    radial-gradient(circle 1px, #ff3d3d 100%, transparent 0),
+    radial-gradient(circle 1px, #ff0095 100%, transparent 0),
+    radial-gradient(circle 1px, #ff52a5 100%, transparent 0),
+    radial-gradient(circle 1px, #ff7300 100%, transparent 0),
+    radial-gradient(circle 1px, #fecf4d 100%, transparent 0),
+    radial-gradient(circle 1px, #c13e72 100%, transparent 0),
+    radial-gradient(circle 1px, #8c00ff 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast1 1.3s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast1 {
+
+  0%,
+  1% {
+    font-size: 0.01px;
+  }
+
+  50% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
   }
 
   100% {
-    transform: translateY(70vh);
-    /* Faire terminer les confettis un peu plus bas */
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
   }
 }
 
-/* Couleur des confettis */
-.confetti:nth-child(3) {
-  background-color: #ffff38;
+/* Deuxième élément "truc" */
+.truc2 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 23%;
+  /* Ajustez la position verticale */
+  left: 13%;
+  /* Ajustez la position horizontale */
 }
 
-.confetti:nth-child(4) {
-  background-color: #4ce14c;
+.truc2::before,
+.truc2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 1.6px, #a271fe 100%, transparent 0),
+    radial-gradient(circle 1.6px, #6000d6 100%, transparent 0),
+    radial-gradient(circle 1.6px, #5c67ff 100%, transparent 0),
+    radial-gradient(circle 1.6px, #001eff 100%, transparent 0),
+    radial-gradient(circle 1.6px, #58fefb 100%, transparent 0),
+    radial-gradient(circle 1.6px, #00eeff 100%, transparent 0),
+    radial-gradient(circle 1.6px, #4dfe9a 100%, transparent 0),
+    radial-gradient(circle 1.6px, #00ff11 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast2 1s ease-in infinite;
+  /* Nouvelle animation */
 }
 
-.confetti:nth-child(5) {
-  background-color: #3f3f92;
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast2 {
+
+  0%,
+  30% {
+    font-size: 0.01px;
+  }
+
+  80% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
 }
 
-.confetti:nth-child(6) {
-  background-color: #ba64f7;
+.truc3 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 65%;
+  /* Ajustez la position verticale */
+  left: 77%;
+  /* Ajustez la position horizontale */
 }
 
-.confetti:nth-child(7) {
-  background-color: #ff4d9a;
+
+.truc3::before,
+.truc3::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 1.9px, #7a7a7a 100%, transparent 0),
+    radial-gradient(circle 1.9px, #c4c4c4 100%, transparent 0),
+    radial-gradient(circle 1.9px, #8f8f8f 100%, transparent 0),
+    radial-gradient(circle 1.9px, #707070 100%, transparent 0),
+    radial-gradient(circle 1.9px, #5c5c5c 100%, transparent 0),
+    radial-gradient(circle 1.9px, #454545 100%, transparent 0),
+    radial-gradient(circle 1.9px, #383838 100%, transparent 0),
+    radial-gradient(circle 1.9px, #000000 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast3 1.8s ease-in infinite;
 }
 
-.confetti:nth-child(8) {
-  background-color: #d25151;
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast3 {
+
+  0%,
+  10% {
+    font-size: 0.01px;
+  }
+
+  60% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
 }
 
-.confetti:nth-child(9) {
-  background-color: #660036;
+.truc4 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 77%;
+  /* Ajustez la position verticale */
+  left: 1%;
+  /* Ajustez la position horizontale */
 }
 
-.confetti:nth-child(10) {
-  background-color: #2b5f5f;
+
+.truc4::before,
+.truc4::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 2.2px, #d4ff00 100%, transparent 0),
+    radial-gradient(circle 2.2px, #ff7b00 100%, transparent 0),
+    radial-gradient(circle 2.2px, #ff00bb 100%, transparent 0),
+    radial-gradient(circle 2.2px, #ff0000 100%, transparent 0),
+    radial-gradient(circle 2.2px, #3700ff 100%, transparent 0),
+    radial-gradient(circle 2.2px, #00e1ff 100%, transparent 0),
+    radial-gradient(circle 2.2px, #2bff00 100%, transparent 0),
+    radial-gradient(circle 2.2px, #824d30 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast4 1.25s ease-in infinite;
 }
 
-.confetti:nth-child(11) {
-  background-color: #78bfbf;
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast4 {
+
+  0%,
+  20% {
+    font-size: 0.01px;
+  }
+
+  80% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
 }
 
-.confetti:nth-child(12) {
-  background-color: #00FFFF;
+.truc5 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 57%;
+  /* Ajustez la position verticale */
+  left: 16%;
+  /* Ajustez la position horizontale */
 }
 
-.confetti:nth-child(13) {
-  background-color: #cf542a;
+
+.truc5::before,
+.truc5::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 1px, #00ff04 100%, transparent 0),
+    radial-gradient(circle 1px, #00ff33 100%, transparent 0),
+    radial-gradient(circle 1px, #00ff40 100%, transparent 0),
+    radial-gradient(circle 1px, #04ff00 100%, transparent 0),
+    radial-gradient(circle 1px, #288500 100%, transparent 0),
+    radial-gradient(circle 1px, #00a31b 100%, transparent 0),
+    radial-gradient(circle 1px, #00ad0c 100%, transparent 0),
+    radial-gradient(circle 1px, #009425 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast5 1.8s ease-in infinite;
 }
 
-.confetti:nth-child(14) {
-  background-color: #00ff40;
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast5 {
+
+  0%,
+  15% {
+    font-size: 0.01px;
+  }
+
+  85% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
 }
 
-.confetti:nth-child(15) {
-  background-color: #8000ff;
+.truc6 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 8%;
+  /* Ajustez la position verticale */
+  left: 56%;
+  /* Ajustez la position horizontale */
 }
 
-.confetti:nth-child(16) {
-  background-color: #ff00a2;
+
+.truc6::before,
+.truc6::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 0.7px, #ff0033 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff0000 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff0026 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff0026 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff00c8 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff00d0 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff00c8 100%, transparent 0),
+    radial-gradient(circle 0.7px, #ff00dd 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast6 2s ease-in infinite;
 }
 
-.confetti:nth-child(17) {
-  background-color: #ff2600;
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast6 {
+
+  0%,
+  10% {
+    font-size: 0.01px;
+  }
+
+  60% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
 }
 
-.confetti:nth-child(18) {
-  background-color: #ffe252;
+.truc7 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 74%;
+  /* Ajustez la position verticale */
+  left: 36%;
+  /* Ajustez la position horizontale */
 }
 
-.confetti:nth-child(19) {
-  background-color: #57ffa8;
+
+.truc7::before,
+.truc7::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 0.9px, #ff0033 100%, transparent 0),
+    radial-gradient(circle 0.9px, #9900ff 100%, transparent 0),
+    radial-gradient(circle 0.9px, #00ff9d 100%, transparent 0),
+    radial-gradient(circle 0.9px, #ffc800 100%, transparent 0),
+    radial-gradient(circle 0.9px, #001eff 100%, transparent 0),
+    radial-gradient(circle 0.9px, #528bff 100%, transparent 0),
+    radial-gradient(circle 0.9px, #c8ff00 100%, transparent 0),
+    radial-gradient(circle 0.9px, #37ff00 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast7 2s ease-in infinite;
 }
 
-.confetti:nth-child(20) {
-  background-color: #ffa27a;
-}
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast7 {
 
-.confetti:nth-child(21) {
-  background-color: #f358fe;
-}
+  0%,
+  10% {
+    font-size: 0.01px;
+  }
 
-.confetti:nth-child(22) {
-  background-color: #8067fe;
-}
+  60% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
 
-.confetti:nth-child(23) {
-  background-color: #fe9fc8;
-}
-
-.confetti:nth-child(24) {
-  background-color: #87c059;
-}
-
-.confetti:nth-child(25) {
-  background-color: #5c0000;
-}
-
-.confetti:nth-child(26) {
-  background-color: #a47846;
-}
-
-.confetti:nth-child(27) {
-  background-color: #ffff38;
-}
-
-.confetti:nth-child(28) {
-  background-color: #4ce14c;
-}
-
-.confetti:nth-child(29) {
-  background-color: #3f3f92;
-}
-
-.confetti:nth-child(30) {
-  background-color: #ba64f7;
-}
-
-.confetti:nth-child(31) {
-  background-color: #ff4d9a;
-}
-
-.confetti:nth-child(32) {
-  background-color: #d25151;
-}
-
-.confetti:nth-child(33) {
-  background-color: #660036;
-}
-
-.confetti:nth-child(34) {
-  background-color: #2b5f5f;
-}
-
-.confetti:nth-child(35) {
-  background-color: #78bfbf;
-}
-
-.confetti:nth-child(36) {
-  background-color: #00FFFF;
-}
-
-.confetti:nth-child(37) {
-  background-color: #cf542a;
-}
-
-.confetti:nth-child(38) {
-  background-color: #00ff40;
-}
-
-.confetti:nth-child(39) {
-  background-color: #8000ff;
-}
-
-.confetti:nth-child(40) {
-  background-color: #ff00a2;
-}
-
-.confetti:nth-child(41) {
-  background-color: #ff2600;
-}
-
-.confetti:nth-child(42) {
-  background-color: #ffe252;
-}
-
-.confetti:nth-child(43) {
-  background-color: #57ffa8;
-}
-
-.confetti:nth-child(44) {
-  background-color: #ffa27a;
-}
-
-.confetti:nth-child(45) {
-  background-color: #f358fe;
-}
-
-.confetti:nth-child(46) {
-  background-color: #8067fe;
-}
-
-.confetti:nth-child(47) {
-  background-color: #fe9fc8;
-}
-
-.confetti:nth-child(48) {
-  background-color: #87c059;
-}
-
-.confetti:nth-child(49) {
-  background-color: #5c0000;
-}
-
-.confetti:nth-child(50) {
-  background-color: #a47846;
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
 }

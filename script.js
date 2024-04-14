@@ -13,16 +13,27 @@ fetch('testbdd.csv')
     });
 
     const animalChoisi = animals[Math.floor(Math.random() * animals.length)];
-    console.log("Animal choisi au hasard :", animalChoisi);
+    console.log("Animal choisi au hasard :", animalChoisi.name);
 
     document.getElementById('userInput').addEventListener('change', function() {
       const userInput = this.value.trim().toLowerCase();
+      this.value = "";
       const animalEntree = animals.find(animal => animal.name.toLowerCase() === userInput);
+      const animalPresent = resultatsEssais.find(res => res.animalEntree.name.toLowerCase() === userInput);
+
+      if (animalPresent != null) {
+        afficherMessageErreur("Cet animal a déjà été entré");
+        return;
+      }
 
       if (!animalEntree) {
         afficherMessageErreur("L'animal n'appartient pas à la base de données");
         return;
       }
+
+      document.getElementById('animauxList').innerHTML = "";
+      const index = animalNames.findIndex(animal => animal === (userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase()));
+      animalNames.splice(index, 1);
 
       const resultatEssai = {
         userInput,
@@ -62,17 +73,21 @@ function afficherResultatsEssais(animalChoisi) {
   if (dernierEssai && dernierEssai.userInput === animalChoisi.name.toLowerCase()) {
     // URL de la page de victoire ou toute autre page que tu souhaites afficher
     //const urlDeVictoire = 'http://localhost/projet%20web/gagne.html';
-    const urlDeVictoire = './gagne.html';
+    const urlDeVictoire = './gagne.html?animal=';
 
     // Affiche un message de succès avant de rediriger
     //resultatElement.innerHTML = `<div class="succes">Bien joué, c'était : ${animalChoisi.name}</div>`;
 
-    window.location.href = urlDeVictoire;
+    window.location.href = urlDeVictoire + encodeURIComponent(animalChoisi.name);
+
+    //document.getElementById("animalMystere").textContent = "TEST"; //animalChoisi.name;
+
     // Utilise setTimeout pour laisser un peu de temps afin que l'utilisateur puisse lire le message
     // setTimeout(() => {
     //   window.location.href = urlDeVictoire;
     // }, 2000); // Redirige après 2 secondes
   } else {
+    afficherMessageErreur("")
     let essaisHTML = ''; // Initialise une chaîne vide pour stocker les essais sous forme HTML
 
     // Commence le tableau
@@ -104,7 +119,7 @@ function afficherResultatsEssais(animalChoisi) {
       // Ajoute les informations de l'essai dans des cellules de tableau
       essaisHTML += `
         <td>${resultatEssai.animalEntree.name}</td>
-        <td><img src="${cheminImage}" alt="Image de ${resultatEssai.animalEntree.name}" style="width:100px; height:100px;"></td>    
+        <td><img src="${cheminImage}" alt="Image de ${resultatEssai.animalEntree.name}"></td>    
         <td class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.type}</td>
         <td class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.habitat}</td>
         <td class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.regimeAlimentaire}</td>
@@ -127,20 +142,9 @@ function afficherResultatsEssais(animalChoisi) {
 }
 
 
-
-document.getElementById('userInput').addEventListener('keyup', function(event) {
-  if (event.keyCode === 13) { // KeyCode 13 est la touche Entrée
-    this.value = ''; // Vide le champ input
-  }
-});
-
-function effacerSurEntree(event) {
-  if (event.keyCode === 13) {
-    document.getElementById('userInput').value = '';
-  }
+function removeAccents(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-
-
 
 // Stocker les noms d'animaux pour les suggestions
 let animalNames = [];
@@ -155,12 +159,26 @@ fetch('testbdd.csv')
     // Extraire les noms d'animaux de chaque ligne
     animalNames = lines.map(line => line.split(';')[0].trim());
 
+    animalNames.sort()
+
     // Afficher les suggestions lors de la saisie dans l'input
     const userInput = document.getElementById('userInput');
     userInput.addEventListener('input', function() {
-      const inputText = this.value.toLowerCase(); // Convertir en minuscules
-      const suggestions = animalNames.filter(name => name.toLowerCase().startsWith(inputText));
-      updateSuggestions(suggestions);
+      const inputText = removeAccents(this.value.toLowerCase()); // Convertir en minuscules
+      //const inputText = this.value.toLowerCase();
+      console.log("entrée : " + inputText);
+      if (inputText.length > 0) {
+        console.log("animalName : " + removeAccents(animalNames[89].toLowerCase()));
+        if (removeAccents(animalNames[89].toLowerCase()).startsWith(inputText))
+          console.log("TEST");
+        const suggestions = animalNames.filter(name => removeAccents(name.toLowerCase()).startsWith(inputText));
+        console.log("Nombre de suggestions : " + suggestions.length);
+        //const suggestions = animalNames.filter(name => name.toLowerCase().startsWith(inputText));
+        updateSuggestions(suggestions);
+      }
+      else {
+        document.getElementById('animauxList').innerHTML = "";
+      }
     });
   })
   .catch(error => console.error('Erreur lors de la récupération des données:', error));
