@@ -39,7 +39,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://files.u-angers.fr/data/f-abb59789a3d07573a24053df.jpg');
+  background-image: url('background.jpg');
   background-size: 100% 100%;
   background-repeat: repeat;
   display: flex;
@@ -105,8 +105,8 @@ body {
 .imageAnimal {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /*border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
 }
 
 
@@ -520,6 +520,128 @@ body {
 
 /* Animation pour le deuxième élément "truc" */
 @keyframes blast7 {
+
+  0%,
+  10% {
+    font-size: 0.01px;
+  }
+
+  60% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
+
+.truc8 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 40%;
+  /* Ajustez la position verticale */
+  left: 33%;
+  /* Ajustez la position horizontale */
+}
+
+
+.truc8::before,
+.truc8::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 0.9px, #ff0033 100%, transparent 0),
+    radial-gradient(circle 0.9px, #4e0a7b 100%, transparent 0),
+    radial-gradient(circle 0.9px, #05764a 100%, transparent 0),
+    radial-gradient(circle 0.9px, #c7710f 100%, transparent 0),
+    radial-gradient(circle 0.9px, #01107e 100%, transparent 0),
+    radial-gradient(circle 0.9px, #1745a1 100%, transparent 0),
+    radial-gradient(circle 0.9px, #8a9565 100%, transparent 0),
+    radial-gradient(circle 0.9px, #337a1f 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast8 2.1s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast8 {
+
+  0%,
+  10% {
+    font-size: 0.01px;
+  }
+
+  60% {
+    opacity: 1;
+    font-size: 8px;
+    /* Ajustez la taille de l'explosion */
+  }
+
+  100% {
+    font-size: 12px;
+    /* Ajustez la taille de l'explosion */
+    opacity: 0;
+  }
+}
+
+.truc9 {
+  width: 100px;
+  /* Augmentez la largeur */
+  height: 100px;
+  /* Augmentez la hauteur */
+  position: absolute;
+  top: 67%;
+  /* Ajustez la position verticale */
+  left: 55%;
+  /* Ajustez la position horizontale */
+}
+
+
+.truc9::before,
+.truc9::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  /* Augmentez la taille des cercles */
+  height: 58px;
+  /* Augmentez la taille des cercles */
+  background-image: radial-gradient(circle 0.9px, #ff0033 100%, transparent 0),
+    radial-gradient(circle 0.9px, #4e0a7b 100%, transparent 0),
+    radial-gradient(circle 0.9px, #05764a 100%, transparent 0),
+    radial-gradient(circle 0.9px, #c7710f 100%, transparent 0),
+    radial-gradient(circle 0.9px, #01107e 100%, transparent 0),
+    radial-gradient(circle 0.9px, #1745a1 100%, transparent 0),
+    radial-gradient(circle 0.9px, #8a9565 100%, transparent 0),
+    radial-gradient(circle 0.9px, #337a1f 100%, transparent 0);
+  background-position: 0em -7em, 0em 7em, 7em 0em, -7em 0em,
+    6em -6em, -6em -6em, 6em 6em, -6em 6em;
+  background-repeat: no-repeat;
+  font-size: 0.5px;
+  border-radius: 50%;
+  animation: blast9 1.9s ease-in infinite;
+}
+
+/* Animation pour le deuxième élément "truc" */
+@keyframes blast9 {
 
   0%,
   10% {
