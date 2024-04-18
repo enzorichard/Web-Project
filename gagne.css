@@ -39,7 +39,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://files.u-angers.fr/data/f-abb59789a3d07573a24053df.jpg');
+  background-image: url('background.jpg');
   background-size: 100% 100%;
   background-repeat: repeat;
   display: flex;
