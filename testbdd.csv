@@ -62,31 +62,31 @@ Dingo;Terrestre;Carnivore;Mammifère;Poils;Marron;Moyen;Vulnérable
 Antilope;Terrestre;Herbivore;Mammifère;Poils;Marron;Moyen;Vulnérable
 Coyote;Terrestre;Carnivore;Mammifère;Poils;Gris;Moyen;Sans danger
 Dromadaire;Terrestre;Herbivore;Mammifère;Poils;Marron;Grand;Domestiqué
-Taureau;Terrestre;Herbivore;Mammifère;Poils;Noir;Grand;Variable
-Castor;Aquatique;Herbivore;Mammifère;Poils;Marron;Moyen;Variable
+Taureau;Terrestre;Herbivore;Mammifère;Poils;Noir;Grand;Sans danger
+Castor;Aquatique;Herbivore;Mammifère;Poils;Marron;Moyen;Sans danger
 Requin;Aquatique;Carnivore;Poisson;Écailles;Bleu;Grand;Sans danger
-Hippocampe;Maritime;Carnivore;Poisson;Écailles;Variable;Petit;Variable
+Hippocampe;Maritime;Carnivore;Poisson;Écailles;Variable;Petit;En danger
 Grenouille;Aquatique;Omnivore;Amphibien;Peau;Vert;Petit;Sans danger
 Crapaud;Terrestre;Carnivore;Amphibien;Peau;Vert;Moyen;Sans danger
 Autruche;Terrestre;Omnivore;Oiseau;Plumes;Marron;Grand;Sans danger
 Raie;Aquatique;Piscivore;Poisson;Peau;Bleu;Grand;Sans danger
-Huître;Aquatique;Filtrateur;Mollusque;Coquille;Gris;Petit;Variable
-Oursin;Aquatique;Herbivore;Échinoderme;Épines;Marron;Petit;Variable
-Crabe;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Variable
-Étoile de mer;Aquatique;Carnivore;Échinoderme;Bras;Marron;Petit;Variable
-Homard;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Variable
-Calamar;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Variable
-Poulpe;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Variable
+Huître;Aquatique;Filtrateur;Mollusque;Coquille;Gris;Petit;Sans danger
+Oursin;Aquatique;Herbivore;Échinoderme;Épines;Marron;Petit;Sans danger
+Crabe;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Sans danger
+Étoile de mer;Aquatique;Carnivore;Échinoderme;Bras;Marron;Petit;Sans danger
+Homard;Aquatique;Omnivore;Arthropode;Carapace;Marron;Moyen;Sans danger
+Calamar;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Sans danger
+Poulpe;Aquatique;Carnivore;Mollusque;Tentacules;Marron;Moyen;Sans danger
 Araignée;Terrestre;Carnivore;Arthropode;Poils;Noir;Petit;Sans danger
 Écureuil;Terrestre;Herbivore;Mammifère;Poils;Marron;Petit;Sans danger
 Lama;Terrestre;Herbivore;Mammifère;Poils;Beige;Moyen;Domestiqué
 Alpaga;Terrestre;Herbivore;Mammifère;Poils;Beige;Petit;Domestiqué
 Furet;Terrestre;Carnivore;Mammifère;Poils;Marron;Petit;Domestiqué
 Cafard;Terrestre;Omnivore;Insecte;Carapace;Marron;Petit;Sans danger
-Moule;Aquatique;Filtrateur;Mollusque;Coquille;Noir;Petit;Variable
+Moule;Aquatique;Filtrateur;Mollusque;Coquille;Noir;Petit;Sans danger
 Mante religieuse;Terrestre;Carnivore;Insecte;Carapace;Vert;Petit;Sans danger
 Sauterelle;Terrestre;Herbivore;Insecte;Ailes;Variable;Petit;Sans danger
 Coccinelle;Terrestre;Herbivore;Insecte;Carapace;Rouge, Noir;Petit;Sans danger
-Palourde;Aquatique;Filtrateur;Mollusque;Coquille;Marron;Petit;Variable
-Langouste;Aquatique;Carnivore;Arthropode;Carapace;Marron;Moyen;Variable
-Crevette;Aquatique;Omnivore;Arthropode;Carapace;Orange;Petit;Variable
+Palourde;Aquatique;Filtrateur;Mollusque;Coquille;Marron;Petit;Sans danger
+Langouste;Aquatique;Carnivore;Arthropode;Carapace;Marron;Moyen;Sans danger
+Crevette;Aquatique;Omnivore;Arthropode;Carapace;Orange;Petit;Sans danger
