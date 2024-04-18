@@ -111,7 +111,9 @@ function afficherResultatsEssais(animalChoisi) {
     // Parcours le tableau des résultats dans l'ordre inverse
     for (let i = resultatsEssais.length - 1; i >= 0; i--) {
       const resultatEssai = resultatsEssais[i];
-      const cheminImage = `images/${resultatEssai.animalEntree.name.toLowerCase()}.jpg`; // Ajuste selon le schéma de nommage de tes images
+      //const cheminImage = `images/${resultatEssai.animalEntree.name.toLowerCase()}.jpg`; // Ajuste selon le schéma de nommage de tes images
+      const cheminImage = `images/${resultatEssai.animalEntree.name.toLowerCase()}.jpg`;
+      
 
       // Début d'une nouvelle ligne de tableau
       essaisHTML += '<tr>';
@@ -119,7 +121,7 @@ function afficherResultatsEssais(animalChoisi) {
       // Ajoute les informations de l'essai dans des cellules de tableau
       essaisHTML += `
         <td>${resultatEssai.animalEntree.name}</td>
-        <td><img src="${cheminImage}" alt="Image de ${resultatEssai.animalEntree.name}"></td>    
+        <td><img src="${cheminImage}" alt="Image de ${resultatEssai.animalEntree.name}" height="60px"></td>    
         <td class="${resultatEssai.correspondances.type ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.type}</td>
         <td class="${resultatEssai.correspondances.habitat ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.habitat}</td>
         <td class="${resultatEssai.correspondances.regimeAlimentaire ? 'vrai' : 'faux'}">${resultatEssai.animalEntree.regimeAlimentaire}</td>
@@ -194,3 +196,6 @@ function updateSuggestions(suggestions) {
     datalist.appendChild(option);
   });
 }
+
+
+
