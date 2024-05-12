@@ -8,8 +8,8 @@ La description du projet :
 Membres de l’équipes et le rôle de chacun :
 
 - Yann :
-- Guillaume :
-- Adèle : Le code html et css de la page gagne, le code css et html global de la page principale, le dossier image et les animaux de la base de donnée csv.
+- Guillaume : Code javascrip (cases,...) + changement du css et html pour la page index afin d'optenir un meilleure aspect + ajout d'animaux dans la base de données
+- Adèle : Le code html et css de la page gagne, le code html global de la page principale, le dossier image et les animaux de la base de donnée csv.
 - Enzo : Une partie des scripts js (plusieurs fonctionnalités et gagne.js), le css de l'affichage des résultats et un peu d'html.
 
 
