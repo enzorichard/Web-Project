@@ -1,4 +1,4 @@
-Le titre du projet :
+Le titre du projet : 
 
 WildGuess
 
