@@ -5,7 +5,7 @@ WildGuess
 
 La description du projet :
 
-Les utilisateurs ont pour mission de deviner un animal mystère en entrant les caractéristiques des animaux qu'ils connaissent. Au départ, un animal mystère est sélectionné aléatoirement dans notre base de données. Ensuite, à chaque caractéristique que l'utilisateur entre, le système vérifie si elle correspond à celles de l'animal mystère. Plus on entre de caractéristiques, plus on se rapproche de la solution.
+Les utilisateurs ont pour mission de deviner un animal mystère en entrant des animaux qu'ils connaissent. Au départ, l'animal mystère est sélectionné aléatoirement dans notre base de données. Ensuite, à chaque animal que l'utilisateur entre, le système vérifie si ses caractéristiques correspondent à celles de l'animal mystère. Si une caractéristique est commune à celle de l'animal mystère, celle-ci est affichée en vert pour que l'utilisateur soit au courant. Plus on entre d'animaux, plus on a des informations sur les caractéristiques de l'animal mystère et plus on se rapproche de la solution.
 
 
 Membres de l’équipes et le rôle de chacun :
@@ -21,11 +21,6 @@ Technologies utilisées :
 HTML, CSS et Javascript
 
 
-Lien (si possible) vers une démonstration de l’application :
-
-https://a6274d6a-db64-4a9d-9852-67f8316db2da-00-egr7m27dk5lx.riker.replit.dev/
-
-
 Bugs connus :
 
-X
+Il faut écrire les noms des animaux avec les bons accents si il y en a. "Éléphant" n'est pas équivalent à "Elephant". Les suggestions d'animaux ne fonctionnent donc pas non plus si les accents ne sont pas mis.
